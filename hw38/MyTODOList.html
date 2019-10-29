@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My To Do List</title>
     <style>
+        * {
+            font-family: cursive;
+        }
+
         .ok {
             list-style-image: url("./img/unchecked_16.png");
             background-color: rgba(121, 196, 198, 0.94);
@@ -20,15 +25,22 @@
         }
 
         ul {
+            width: 500px;
             font-size: 16px;
             list-style-position: inside;
-            margin-right: 85%;
+        }
+
+        li {
+            padding: 10px 50px;
         }
 
         .line {
             text-decoration: line-through;
         }
 
+        h2 {
+            margin-left: 40px;
+        }
 
         .arrow {
             color: #7d0000;
@@ -38,20 +50,23 @@
     </style>
 
 </head>
+
 <body>
-<ul>
-    <li class="ok"><span>Hit yhe gym </span><span class="arrow">&#10006;</span></li>
-    <li class="no"><span class="line">Pay bills  </span><span class="arrow">&#10006;</span></li>
-    <li class="ok"><span>Meet John  </span><span class="arrow">&#10006;</span></li>
-    <li class="okTwo"><span class="light">Buy eggs  </span><span class="arrow">&#10006;</span></li>
-    <li class="no"><span class="line">Read a book  </span><span class="arrow">&#10006;</span></li>
-    <li class="okTwo"><span class="light">Organize office  </span><span class="arrow">&#10006;</span></li>
-    <li class="ok"><span>Eat dinner  </span><span class="arrow">&#10006;</span></li>
-    <li class="okTwo"><span class="light">Buy apples  </span><span class="arrow">&#10006;</span></li>
-    <li class="ok"><span>Meet George  </span><span class="arrow">&#10006;</span></li>
-    <li class="okTwo"><span class="light">Feed the cat  </span><span class="arrow">&#10006;</span></li>
-    <li class="no"><span class="line">Write a letter  </span><span class="arrow">&#10006;</span></li>
-    <li class="okTwo"><span class="light">Run 1 km  </span><span class="arrow">&#10006;</span></li>
-</ul>
+    <h2>My To Do List</h2>
+    <ul>
+        <li class="ok"><span>Hit yhe gym </span><span class="arrow">&#10006;</span></li>
+        <li class="no"><span class="line">Pay bills </span><span class="arrow">&#10006;</span></li>
+        <li class="ok"><span>Meet John </span><span class="arrow">&#10006;</span></li>
+        <li class="okTwo"><span class="light">Buy eggs </span><span class="arrow">&#10006;</span></li>
+        <li class="no"><span class="line">Read a book </span><span class="arrow">&#10006;</span></li>
+        <li class="okTwo"><span class="light">Organize office </span><span class="arrow">&#10006;</span></li>
+        <li class="ok"><span>Eat dinner </span><span class="arrow">&#10006;</span></li>
+        <li class="okTwo"><span class="light">Buy apples </span><span class="arrow">&#10006;</span></li>
+        <li class="ok"><span>Meet George </span><span class="arrow">&#10006;</span></li>
+        <li class="okTwo"><span class="light">Feed the cat </span><span class="arrow">&#10006;</span></li>
+        <li class="no"><span class="line">Write a letter </span><span class="arrow">&#10006;</span></li>
+        <li class="okTwo"><span class="light">Run 1 km </span><span class="arrow">&#10006;</span></li>
+    </ul>
 </body>
+
 </html>
