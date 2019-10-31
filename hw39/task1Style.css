@@ -1,0 +1,16 @@
+.food {
+    border: 1px solid;
+    border-radius: 15px;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    text-align: center;
+    float: top;
+}

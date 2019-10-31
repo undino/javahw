@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3260c6fc-0b92-4fd5-8a91-a8bbcfff0ada" name="Default Changelist" comment="" />
+    <list default="true" id="27a76e8c-ea97-4351-bf1c-3f8d0fd20553" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,21 +11,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1SY2gjujGo3NBD608rnHZuuOuK3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1SubPP1FU1XVbAT7r72CNKznsqZ" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hw39" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -33,11 +32,6 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Orlov\Desktop\hw37" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,31 +50,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3260c6fc-0b92-4fd5-8a91-a8bbcfff0ada" name="Default Changelist" comment="" />
-      <created>1571726321085</created>
+      <changelist id="27a76e8c-ea97-4351-bf1c-3f8d0fd20553" name="Default Changelist" comment="" />
+      <created>1572416405261</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571726321085</updated>
-      <workItem from="1571726324847" duration="38896000" />
-      <workItem from="1572115081642" duration="611000" />
-      <workItem from="1572550557004" duration="968000" />
+      <updated>1572416405261</updated>
+      <workItem from="1572416429397" duration="1073000" />
+      <workItem from="1572417980467" duration="3374000" />
+      <workItem from="1572421464324" duration="13946000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
