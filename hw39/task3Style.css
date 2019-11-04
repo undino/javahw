@@ -1,4 +1,70 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    height: 150px;
-    background-color: brown;
+    height: 30px;
+    background-color: #932d57;
+    padding: 20px;
+    margin: 10px;
+}
+
+menu {
+    background-color: #6e0a34;
+    padding: 20px;
+    margin: 10px;
+    height: 30px;
+}
+
+aside {
+    background-color: #b75b81;
+    margin: 0.8%;
+    padding: 1%;
+}
+
+.asideOne {
+    float: left;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+
+.asideTwo {
+    float: left;
+    width: 20%;
+    height: 100px;
+    clear: left;
+    text-align: center;
+}
+
+.asideThree {
+    float: right;
+    width: 10%;
+    height: 200px;
+    text-align: center;
+}
+
+main {
+    float: right;
+    background-color: #b75b81;
+    padding: 1%;
+    margin: 0.7%;
+    width: 59%;
+    height: 300px;
+}
+
+section{
+    background-color: #dc93b1;
+    padding: 50px;
+    margin: 10px;
+}
+
+footer{
+    margin: 10px;
+    height: 30px;
+    background-color: #6e0a34;
+    padding: 20px;
+    clear: right;
 }

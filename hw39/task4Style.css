@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rebeccapurple;
+    height: 250px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+ul {
+    list-style: none outside;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width: 100px;
+    color: white;
+}
+
+li {
+    margin-top: 10%;
+    width: 150%;
+    font-size: 14px;
+}
+
+.ulFirst {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.ulSecond {
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+
+.ulFirst li:hover,
+.ulSecond li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+div {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    top: 35%;
+    right: 10%;
+}
+
+div a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}
+
+.fb {
+    background-image: url("img/fb.png");
+    background-size: 45px;
+    position: absolute;
+    left: 0;
+}
+
+.inst {
+    background-image: url("img/insta.png");
+    background-size: 45px;
+    position: absolute;
+    left: 45%;
+}
+
+.youtube {
+    background-image: url("img/youtube.png");
+    background-size: 45px;
+    position: absolute;
+    right: 0;
+}
+
+img:hover {
+    opacity: 0;
+}
+
+
+hr {
+    position: relative;
+    clear: both;
+    top: 75%;
+}
+
+span {
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+}
+
+
+
