@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>index02</title>
+    <style>
+
+        body {
+            background-color: whitesmoke;
+            text-transform: uppercase;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            position: fixed;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #bbb;
+            width: 90px;
+            height: 100vh;
+        }
+
+        li {
+            overflow: hidden;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            color: transparent;
+        }
+
+        .edit::before {
+            display: inline-block;
+            content: "";
+            background: url("img/edit.png") center no-repeat;
+            background-size: 45px 45px;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 30px;
+
+        }
+
+        .favorites::before {
+            display: inline-block;
+            content: "";
+            background: url("img/favorites.png") center no-repeat;
+            background-size: 45px 45px;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
+
+        .history::before {
+            display: inline-block;
+            content: "";
+            background: url("img/history.png") center no-repeat;
+            background-size: 45px 45px;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
+
+        .security::before {
+            display: inline-block;
+            content: "";
+            background: url("img/security.png") center no-repeat;
+            background-size: 45px 45px;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
+
+        .settings::before {
+            display: inline-block;
+            content: "";
+            background: url("img/settings.png") center no-repeat;
+            background-size: 45px 45px;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
+
+        li:nth-child(2):hover,
+        li:nth-child(3):hover,
+        li:nth-child(4):hover,
+        li:nth-child(5):hover,
+        li:nth-child(6):hover {
+            background-color: #5b5b5b;
+            cursor: pointer;
+            color: white;
+            transition-property: background-color, color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        h1, p {
+            padding: 0;
+            margin: 30px 100px 0 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li style="color: white">menu</li>
+    <li class="edit">edit</li>
+    <li class="favorites">favorites</li>
+    <li class="history">history</li>
+    <li class="security">security</li>
+    <li class="settings">settings</li>
+</ul>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore minima quia! Accusamus animi consectetur
+    dolorum ducimus eos expedita fugit hic id itaque laboriosam modi, nisi nostrum officia placeat porro praesentium
+    provident quaerat quas quasi rem soluta totam, ut veritatis! Aliquid amet architecto debitis dolore dolores eaque
+    earum, eius error eum fuga fugit id modi nam pariatur perferendis perspiciatis provident quam quis quisquam quod
+    ratione reprehenderit sit tempore veniam voluptatum? Atque consectetur corporis dolor dolorum earum error, facilis
+    ipsum itaque molestiae molestias natus nisi nobis odio recusandae reiciendis repellat saepe tempora unde voluptatem
+    voluptatibus. Amet architecto cum deserunt dicta id itaque mollitia nisi odit quam saepe sed unde, vitae voluptate.
+    Ad corporis cupiditate modi perspiciatis porro quis sapiente tempore vero! A aliquam amet architecto assumenda
+    autem, blanditiis commodi dignissimos, distinctio doloremque ducimus est excepturi expedita facilis harum hic id
+    illo ipsa iste itaque maxime molestiae nulla odio optio pariatur quae reiciendis temporibus ullam? Asperiores error,
+    inventore iure nostrum quam qui quidem quod reiciendis repellat sed! Rem, sapiente vel. Consequuntur eligendi fugit
+    ipsam odit placeat recusandae repellat rerum sunt? Adipisci aspernatur assumenda, consectetur corporis, doloremque
+    exercitationem ipsa, pariatur qui quis suscipit vel veniam? Accusantium ea harum itaque maxime neque omnis
+    veniam.</p>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore minima quia! Accusamus animi consectetur
+    dolorum ducimus eos expedita fugit hic id itaque laboriosam modi, nisi nostrum officia placeat porro praesentium
+    provident quaerat quas quasi rem soluta totam, ut veritatis! Aliquid amet architecto debitis dolore dolores eaque
+    earum, eius error eum fuga fugit id modi nam pariatur perferendis perspiciatis provident quam quis quisquam quod
+    ratione reprehenderit sit tempore veniam voluptatum? Atque consectetur corporis dolor dolorum earum error, facilis
+    ipsum itaque molestiae molestias natus nisi nobis odio recusandae reiciendis repellat saepe tempora unde voluptatem
+    voluptatibus. Amet architecto cum deserunt dicta id itaque mollitia nisi odit quam saepe sed unde, vitae voluptate.
+    Ad corporis cupiditate modi perspiciatis porro quis sapiente tempore vero! A aliquam amet architecto assumenda
+    autem, blanditiis commodi dignissimos, distinctio doloremque ducimus est excepturi expedita facilis harum hic id
+    illo ipsa iste itaque maxime molestiae nulla odio optio pariatur quae reiciendis temporibus ullam? Asperiores error,
+    inventore iure nostrum quam qui quidem quod reiciendis repellat sed! Rem, sapiente vel. Consequuntur eligendi fugit
+    ipsam odit placeat recusandae repellat rerum sunt? Adipisci aspernatur assumenda, consectetur corporis, doloremque
+    exercitationem ipsa, pariatur qui quis suscipit vel veniam? Accusantium ea harum itaque maxime neque omnis
+    veniam.</p>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore minima quia! Accusamus animi consectetur
+    dolorum ducimus eos expedita fugit hic id itaque laboriosam modi, nisi nostrum officia placeat porro praesentium
+    provident quaerat quas quasi rem soluta totam, ut veritatis! Aliquid amet architecto debitis dolore dolores eaque
+    earum, eius error eum fuga fugit id modi nam pariatur perferendis perspiciatis provident quam quis quisquam quod
+    ratione reprehenderit sit tempore veniam voluptatum? Atque consectetur corporis dolor dolorum earum error, facilis
+    ipsum itaque molestiae molestias natus nisi nobis odio recusandae reiciendis repellat saepe tempora unde voluptatem
+    voluptatibus. Amet architecto cum deserunt dicta id itaque mollitia nisi odit quam saepe sed unde, vitae voluptate.
+    Ad corporis cupiditate modi perspiciatis porro quis sapiente tempore vero! A aliquam amet architecto assumenda
+    autem, blanditiis commodi dignissimos, distinctio doloremque ducimus est excepturi expedita facilis harum hic id
+    illo ipsa iste itaque maxime molestiae nulla odio optio pariatur quae reiciendis temporibus ullam? Asperiores error,
+    inventore iure nostrum quam qui quidem quod reiciendis repellat sed! Rem, sapiente vel. Consequuntur eligendi fugit
+    ipsam odit placeat recusandae repellat rerum sunt? Adipisci aspernatur assumenda, consectetur corporis, doloremque
+    exercitationem ipsa, pariatur qui quis suscipit vel veniam? Accusantium ea harum itaque maxime neque omnis
+    veniam.</p>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore minima quia! Accusamus animi consectetur
+    dolorum ducimus eos expedita fugit hic id itaque laboriosam modi, nisi nostrum officia placeat porro praesentium
+    provident quaerat quas quasi rem soluta totam, ut veritatis! Aliquid amet architecto debitis dolore dolores eaque
+    earum, eius error eum fuga fugit id modi nam pariatur perferendis perspiciatis provident quam quis quisquam quod
+    ratione reprehenderit sit tempore veniam voluptatum? Atque consectetur corporis dolor dolorum earum error, facilis
+    ipsum itaque molestiae molestias natus nisi nobis odio recusandae reiciendis repellat saepe tempora unde voluptatem
+    voluptatibus. Amet architecto cum deserunt dicta id itaque mollitia nisi odit quam saepe sed unde, vitae voluptate.
+    Ad corporis cupiditate modi perspiciatis porro quis sapiente tempore vero! A aliquam amet architecto assumenda
+    autem, blanditiis commodi dignissimos, distinctio doloremque ducimus est excepturi expedita facilis harum hic id
+    illo ipsa iste itaque maxime molestiae nulla odio optio pariatur quae reiciendis temporibus ullam? Asperiores error,
+    inventore iure nostrum quam qui quidem quod reiciendis repellat sed! Rem, sapiente vel. Consequuntur eligendi fugit
+    ipsam odit placeat recusandae repellat rerum sunt? Adipisci aspernatur assumenda, consectetur corporis, doloremque
+    exercitationem ipsa, pariatur qui quis suscipit vel veniam? Accusantium ea harum itaque maxime neque omnis
+    veniam.</p>
+</body>
+</html>
