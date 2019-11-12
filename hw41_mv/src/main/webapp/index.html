@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+    <style>
+        form {
+            font-family: Arial;
+        }
+
+        .outside {
+            position: relative;
+            left: 17%;
+            top: 40px;
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 3%;
+            background-color: rgba(2, 123, 125, 0.45);
+            background-image: url("img/moon_flag.png");
+            background-position: right -20% bottom -40%;
+            background-repeat: no-repeat;
+            background-size: 350px;
+        }
+
+        .inside {
+            position: relative;
+            top: 13%;
+            left: -10%;
+            width: 650px;
+            height: 50px;
+            background: orangered;
+            text-align: center;
+        }
+
+        .line {
+
+            position: absolute;
+            bottom: -15px;
+            left: 80px;
+            display: block;
+            color: white;
+            font-size: 25px;
+        }
+
+        fieldset {
+            position: absolute;
+            top: 30%;
+            width: 90%;
+            height: 60%;
+            border: transparent;
+        }
+
+        .inp1 {
+            width: 400px;
+            height: 35px;
+            background-color: inherit;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .lb2 {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            float: left;
+            margin-right: 50px;
+
+        }
+
+
+        .inp2 {
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            background-color: inherit;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        input[type=button] {
+            position: absolute;
+            top: 74%;
+            right: 8%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outside">
+    <div class="inside"><p class="line">CREDIT CARD DETAILS</p></div>
+    <form action="registration" method="get">
+        <fieldset>
+            <label for="numberCard">Card Number</label><br>
+            <input class="inp1" type="text" name="numCard" placeholder="1234 5678 9012 3456" id="numberCard" required
+                   tabindex="1"
+                   maxlength="19"><br>
+            <label for="nameCard">Name On Card</label><br>
+            <input class="inp1" type="text" name="nameOnCard" id="nameCard" placeholder="Name Surname"><br>
+            <label class="lb2" for="month">Expiry Date<br>
+                <input class="inp2" type="text" name="day" id="month" maxlength="2" placeholder="02">
+            </label>
+            <label class="lb2 2" for="year"><br>
+                <input class="inp2" type="text" name="year" id="year" maxlength="4" placeholder="2017">
+            </label>
+            <label class="lb2" for="CVV">CVV/CVN<br>
+                <input class="inp2" name="cvn" type="password" id="CVV" maxlength="3" placeholder="***">
+            </label>
+
+        </fieldset>
+        <button>Go!</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        form {
+            position: relative;
+            background-color: rgba(204, 204, 204, 0.36);
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            padding-left: 20px;
+        }
+
+        .insideFirst {
+            display: inline-block;
+            width: 500px;
+            min-width: 450px;
+            float: left;
+        }
+
+        .insideFirst input {
+            border: 0;
+            border-bottom: 1px solid grey;
+            padding: 0 0 15px 0;
+            margin: 10px 0 5px 20px;
+            line-height: 1px;
+        }
+
+        .insideSecond input {
+            border: 0;
+            border-bottom: 1px solid grey;
+            padding: 0 0 15px 0;
+            margin: 10px 0 5px 20px;
+        }
+
+        .big {
+            width: 400px;
+            height: 20px;
+            display: inline-block;
+        }
+
+        .small {
+            display: inline-block;
+            width: 190px;
+            height: 20px;
+        }
+
+        .insideSecond {
+            float: right;
+            display: inline-block;
+            padding-top: 0;
+            height: 170px;
+            width: 450px;
+        }
+
+        select {
+            margin-left: 20px;
+            width: 190px;
+            height: 35px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        input[type=date] {
+            width: 190px;
+            height: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .insideFour {
+            clear: both;
+            display: block;
+            height: 100px;
+            align-items: center;
+        }
+
+        button {
+            position: relative;
+            top: 30%;
+            left: 85%;
+            border: 0 solid transparent;
+            width: 80px;
+            height: 35px;
+            background-color: rgba(53, 114, 6, 0.67);
+            border-radius: 4px;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        .insideThree {
+            clear: both;
+            padding-top: 50px;
+        }
+
+        h3 {
+            display: inline-block;
+            width: 450px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#" method="get" class="form">
+    <div class="insideFirst">
+        <h3>Registration form</h3>
+        <img src="img/username.png"><input class="big" type="text" placeholder="User name">
+        <img src="img/email.png" alt=""> <input class="big" type="text" placeholder="Email address">
+        <img src="img/pswd.png" alt=""> <input class="small" type="password" placeholder="Password">
+        <input class="small" type="password" placeholder="Confirm password">
+    </div>
+
+    <div class="insideSecond">
+        <h3>Personal details</h3>
+        <input class="small" type="text" placeholder="First name">
+        <input class="small" type="text" placeholder="Last name">
+        <select class="sel" name="male" id="">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <input type="date">
+    </div>
+
+    <div class="insideThree">
+        <input type="checkbox" class="check">I want to receive mews and special offers<br>
+        <input type="checkbox" class="check">I agree with the Terns and Conditions
+    </div>
+
+    <div class="insideFour">
+        <button>Submit</button>
+    </div>
+</form>
+</body>
+</html>
