@@ -4,9 +4,8 @@ let start = 0;
 let end = 100;
 let equal = true;
 let count = 0;
-let temp;
 do {
-    let result = prompt("If you number equal " + ((end + start)/2) + " specify \"=\", then specify \">\" or \"<\"");
+    let result = prompt("If you number equal " + (Math.round((end + start)/2)) + " specify \"=\", then specify \">\" or \"<\"");
     if (result === "=") {
         equal = false;
     } else if (result === ">") {

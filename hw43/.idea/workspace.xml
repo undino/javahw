@@ -39,6 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,7 +76,9 @@
       <updated>1573679484524</updated>
       <workItem from="1573679490018" duration="6737000" />
       <workItem from="1573830172487" duration="1266000" />
-      <workItem from="1573856230323" duration="13886000" />
+      <workItem from="1573856230323" duration="14646000" />
+      <workItem from="1573927952389" duration="1222000" />
+      <workItem from="1573951030198" duration="701000" />
     </task>
     <servers />
   </component>
