@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>task3</title>
-    <link rel="stylesheet" href="task3Style.css">
+    <!-- обычно файлы стилей складывают в папку css -->
+    <link rel="stylesheet" href="css/task3Style.css">
 </head>
+
 <body>
-<header>
-    header
-</header>
-<menu>
-    menu
-</menu>
-<aside class="asideThree">
-    aside third
-</aside>
-<main>
-    main content
-    <section id="selFirst">
-        section first
-    </section>
-    <section id="selSecond">
-        section second
-    </section>
-</main>
-<aside class="asideOne">
-    aside first
-</aside>
-<aside class="asideTwo">
-    aside second
-</aside>
+    <header>
+        header
+    </header>
+    <!-- Error: Text not allowed in element menu in this context.
+         По спецификации menu может содержать только li
+    -->
+    <menu>
+        <li>menu</li>
+    </menu>
+    <aside class="asideThree">
+        aside third
+    </aside>
+    <main>
+        main content
+        <section id="selFirst">
+            <!-- Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+                     https://www.w3.org/wiki/HTML/Usage/Headings/Missing
+                -->
+            <h2>section first</h2>
+            section first
+        </section>
+        <section id="selSecond">
+            <!-- Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+                     https://www.w3.org/wiki/HTML/Usage/Headings/Missing
+                -->
+            <h2>section second</h2>
+            section second
+        </section>
+    </main>
+    <aside class="asideOne">
+        aside first
+    </aside>
+    <aside class="asideTwo">
+        aside second
+    </aside>
 
 
 
-<footer>
-    footer
-</footer>
+    <footer>
+        footer
+    </footer>
 </body>
+
 </html>
