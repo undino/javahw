@@ -1,46 +1,46 @@
 let arr = [
-    'p0.img',
-    'p1.img',
-    'p2.img',
-    'p3.img',
-    'p4.img',
-    'p5.img',
-    'p6.img',
-    'p7.img',
-    'p8.img',
-    'p9.img',
-    'p10.img',
-    'p11.img',
-    'p12.img',
+    'p0.jpg',
+    'p1.jpg',
+    'p2.jpg',
+    'p3.jpg',
+    'p4.jpg',
+    'p5.jpg',
+    'p6.jpg',
+    'p7.jpg',
+    'p8.jpg',
+    'p9.jpg',
+    'p10.jpg',
+    'p11.jpg',
+    'p12.jpg',
 ];
 
-let count = 0;
+let index = 0;
 let interval;
-document.getElementById('slideShowPictures').onclick = function () {
+slideShowPictures.onclick = function () {
     let timeout = (prompt("Specify the interval between pictures in seconds") * 1000);
     interval = setInterval(startShow, timeout);
 };
 
-document.getElementById('stopSlideShowPictures').onclick = function () {
+stopSlideShowPictures.onclick = function () {
     clearInterval(interval);
 };
 
-document.getElementById('nextPicture').onclick = startShow;
+nextPicture.onclick = startShow;
 
-document.getElementById('previousPicture').onclick = function () {
-    if (count)
-    count -= 2;
+previousPicture.onclick = function () {
+    if (index)
+        index -= 2;
     startShow();
 };
 
 function startShow() {
-    if (count === -1) count = 12;
+    if (index === -1) index = 12;
 
-    if (count !== 13) {
-        document.getElementById('pictures').setAttribute('src', 'img/p' + count + '.jpg');
-        count++
+    if (index !== arr.length) {
+        document.getElementById('pictures').setAttribute('src', 'img/' + arr[index]);
+        index++
     } else {
-        count = 0;
+        index = 0;
     }
 }
 
