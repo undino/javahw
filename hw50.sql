@@ -47,7 +47,7 @@ alter table MovieGenres add constraint fk_MG_Movies foreign key (MovieID) refere
 
 alter table MovieActor add constraint fk_MA_Movies foreign key (MovieID) references Movies(MovieID); 
 alter table MovieActor add constraint fk_MA_Actors foreign key (ActorID) references Actors(ActorID); 
-alter table Movies add constraint fk_Directors_Movies foreign key (DirectorID) references Directors(Dire
+alter table Movies add constraint fk_Directors_Movies foreign key (DirectorID) references Directors(DirectorID !='');
 
 insert Genres (GenreName)
 values
@@ -73,6 +73,6 @@ values
 
 insert Movies (DirectorID, Title, ReleaseYear, Rating, Plot, MovieLength)
 value
-(1, "Одинокие рейнджеры", 2013, 4, "История блюстителя закона Джона Рейда, который с помощью индейца Тон
-(1, "Гермин", 2019, 5, "Генри Броган, первоклассный киллер, становится мишенью таинственного оперативник
+(1, "Одинокие рейнджеры", 2013, 4, "История блюстителя закона Джона Рейда, который с помощью индейца Тон", "02:55:13"),
+(1, "Гермин", 2019, 5, "Генри Броган, первоклассный киллер, становится мишенью таинственного оперативник", "01:57:06"),
 (2, "Такер", 1988, 4, "американский биографический фильм режиссёра Фрэнсиса Форда Копполы", "02:10:46");
