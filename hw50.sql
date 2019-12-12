@@ -47,7 +47,7 @@ alter table MovieGenres add constraint fk_MG_Movies foreign key (MovieID) refere
 
 alter table MovieActor add constraint fk_MA_Movies foreign key (MovieID) references Movies(MovieID); 
 alter table MovieActor add constraint fk_MA_Actors foreign key (ActorID) references Actors(ActorID); 
-alter table Movies add constraint fk_Directors_Movies foreign key (DirectorID) references Directors(DirectorID !='');
+alter table Movies add constraint fk_Movies_Directors foreign key (DirectorID) references Directors(DirectorID);
 
 insert Genres (GenreName)
 values
