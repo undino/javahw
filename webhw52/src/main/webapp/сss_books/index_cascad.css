@@ -1,0 +1,51 @@
+
+#divOfForm {
+    position: absolute;
+    background-color: dimgrey;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    /*right: 50px;*/
+}
+
+#isForm {
+    font-family: Arial;
+    font-size: 15px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+#select {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+#buttonOfForm {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 35px;
+    right: 0px;
+}
+
+
+#inputRequest {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: none;
+    width: 270px;
+    height: 25px;
+    font-size: 16px;
+}
+
+#divOl {
+    position: absolute;
+    left: 550px;
+}
+
+ul{
+    display: none;
+}

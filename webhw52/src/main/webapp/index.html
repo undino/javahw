@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+    <link rel="stylesheet" type="text/css" href="сss_books/index_cascad.css"/>
+</head>
+<body>
+<div id="divOfForm">
+    <form action="addDb" method="post" name="formRequest" id="isForm" > <!--onabort="check()"-->
+
+        <select id="select" name="select">
+            <option id="firstOption" selected disabled hidden>Выберите запрос</option>
+            <option value="1">Выбрать все фильмы и отсортировать по названию</option>
+            <option value="2">Выбрать все фильмы и отсортировать по году выпуска</option>
+            <option value="3">Выбрать все фильмы и отсортировать по рейтингу</option>
+            <option value="4">Выбрать все фильмы и выпущенные в прошлом году</option>
+            <option value="5">Выбрать все фильмы по заданному жанру</option>
+            <option value="6">Выбрать все фильмы по заданному актеру</option>
+            <option value="7">Выбрать все фильмы по заданному продюсеру</option>
+        </select>
+        <input type="text" id="inputRequest" name="inputRequest" placeholder="Введите значение для поиска"
+               autocomplete="off">
+        <input type="submit" id="buttonOfForm" value="Find">
+
+    </form>
+
+</div>
+
+<div id="divOl">
+    <ul id="Actors">
+        <li>Актеры</li>
+        <ol>
+            <li>Брэд</li>
+            <li>Брюс</li>
+            <li>Уилл</li>
+            <li>Том</li>
+            <li>Орди</li>
+        </ol>
+    </ul>
+    <ul id="Genres">
+        <li>Жанры</li>
+        <ol>
+            <li>Боевик</li>
+            <li>Вестерн</li>
+            <li>Драмма</li>
+            <li>Комедия</li>
+            <li>Детектив</li>
+        </ol>
+
+    </ul>
+    <ul id="Directors">
+        <li>Продюсеры</li>
+        <ol>
+            <li>Джордж</li>
+            <li>Аарон</li>
+            <li>Чарльз</li>
+            <li>Тим</li>
+            <li>Тимур</li>
+            <li>Сергей</li>
+            <li>Ридли</li>
+        </ol>
+    </ul>
+</div>
+<script src="javascript_books/showInput.js"></script>
+</body>
+</html>
