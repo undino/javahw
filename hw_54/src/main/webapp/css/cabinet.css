@@ -1,0 +1,122 @@
+
+#header {
+    position: relative;
+    height: 150px;
+    background-color: #45c5ff;
+    display: revert;
+
+}
+
+#header p {
+    display: inline-block;
+    position: absolute;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    top: 25%;
+    left: 50px;
+    font-family: Arial;
+    color: #667585;
+    height: 85px;
+}
+
+#inner {
+    display: block;
+    position: absolute;
+    left: 800px;
+    height: 150px;
+}
+
+span, a {
+    position: absolute;
+    font-family: Arial;
+    font-size: 1.5em;
+
+}
+
+#login {
+    top: 20px;
+
+}
+
+#amount {
+
+    top: 70px;
+}
+
+
+#store {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+ol {
+    position: relative;
+    display: inline-block;
+    float: left;
+    min-width: 200px;
+    top: 160px;
+    background-color: #18a08f;
+    font-size: 1.4em;
+    color: darkslategray;
+
+}
+
+li {
+    font-size: 0.8em;
+    color: #162727;
+    margin-top: 25px;
+    font-family: Andalus;
+}
+
+#addMoney {
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    width: 200px
+}
+
+#addProduct {
+    position: absolute;
+    top: 200px;
+    display: inline-block;
+    left: 65%;
+    width: 400px;
+    background-color: #18a08f;
+    height: 200px;
+}
+
+#addProduct label {
+    display: block;
+    margin-top: 10px;
+}
+
+#addProduct input {
+    position: absolute;
+    right: 20%;
+}
+
+#seller_loginProduct {
+    display: none;
+}
+
+#addProduct div {
+    text-align: center;
+    margin: 5px 0 25px 0;
+}
+
+#out {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+#login_for_store{
+    display: none;
+}
+
+#password_for_store{
+    display: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/cabinet.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <p>Личный кабинет</p>
+    <div id="inner">
+        <span id="login">Логин</span>
+        <span id="amount">Счет</span>
+
+
+        <a href="/store" id="store">Магазин</a>
+        <a href="/store" id="addMoney">Пополнить счет</a>
+    </div>
+    <form action="addProduct" method="post" id="addProduct">
+        <div>ДОБАВИТЬ ЗАКАЗ</div>
+        <label> Тип товара:
+        <input type="text" name="type" id="typeProduct" placeholder="тип"><br>
+        </label>
+        <label>Название:
+        <input type="text" value="" name="title" id="titleProduct" placeholder="Название"><br>
+        </label>
+        <label>Количество:
+        <input type="text" name="quantity" id="quantityProduct" placeholder="quantity"><br>
+        </label>
+        <label>Стоимость еденици:
+        <input type="text" name="price" id="priceProduct" placeholder="price"><br>
+        </label>
+        <input type="text" name="seller_login" id="seller_loginProduct" disabled><br>
+        <input type="submit" value="Добавить заказ">
+    </form>
+</div>
+</body>
+</html>

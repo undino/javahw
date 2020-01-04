@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/">
+    <style>
+        form {
+            font-family: Arial;
+            text-transform: uppercase;
+            position: relative;
+            left: 5%;
+            top: 60px;
+            /*padding: 20px;*/
+            background-color: #667585;
+            height: 450px;
+            width: 450px;
+            padding-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            padding-left: 50px;
+        }
+
+        input {
+            position: absolute;
+            left: 200px;
+            width: 150px;
+        }
+
+        div {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="registration">
+    <div>Registration</div>
+    <label>Login
+        <input type="text" name="login" placeholder="LOGIN">
+    </label><br>
+    <label>Password
+        <input type="password" name="password" placeholder="PASSWORD">
+    </label><br>
+    <label>Role:<br>
+        <p>CONSUMER
+            <input type="radio" name="role" value="CONSUMER" checked>
+        </p><br>
+        <p>SELLER
+            <input type="radio" name="role" value="SELLER">
+        </p><br>
+    </label>
+    <label>
+        <input type="submit" value="SUBMIT">
+    </label>
+
+</form>
+</body>
+</html>

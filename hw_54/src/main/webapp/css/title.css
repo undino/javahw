@@ -1,0 +1,37 @@
+body {
+
+}
+
+#menu {
+    height: 150px;
+    background-color: #45c5ff;
+    display: revert;
+    position: relative;
+}
+
+#menu p {
+    display: inline-block;
+    position: absolute;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    top: 25%;
+    left: 50px;
+    font-family: Arial;
+    color: #667585;
+}
+
+#registration {
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: 50px;
+}
+
+#intoStore {
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: 75px;
+}
