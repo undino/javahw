@@ -1,5 +1,5 @@
 function isUpperCaseFirstLetter(str) {
-    return /^[A-ZА-Я]/.test(str);
+    return /^[A-ZА-ЯЁ]/.test(str); // У буквы Ё код 1025 и он не входит в диапазон А-Я (для unicode)
 }
 
 function isValidEmail(str) {
