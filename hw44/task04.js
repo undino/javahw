@@ -1,12 +1,12 @@
 "use strict";
-let arrFirst = [1, 15, 12, 10, 19, 20, 30];
+let arrFirst = [1, 15, 12, [10, [19], 20], 30];
 
-function copyOfArray(arr) {
-   return  arr.slice(0, arrFirst.length);
+function array_Clone(arr) {
+    return arr.slice(0, arrFirst.length);
 }
 
-let arrSecond = copyOfArray(arrFirst);
+let arrSecond = array_Clone(arrFirst);
 
-for (let i = 0; i < arrSecond.length - 1; i++) {
-    document.writeln(arrSecond[i]);
-}
+arrFirst[3][0] = 100;
+console.log(arrFirst);
+console.log(arrSecond); // Почему меняются два массива? Потому, что клонирование нужно было делать рекурсивным
