@@ -18,6 +18,9 @@ let index = 0;
 let interval;
 slideShowPictures.onclick = function () {
     let timeout = (prompt("Specify the interval between pictures in seconds") * 1000);
+    // перед установкой нового интервала нужно проверять не запущено ли было
+    // слайд шоу ранее и если так, то остановить иначе слайд шоу можно несколько
+    // раз запустить после чего невозможно будет остановить
     interval = setInterval(startShow, timeout);
 };
 
