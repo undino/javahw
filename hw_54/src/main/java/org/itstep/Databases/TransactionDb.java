@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class TransactionDb extends StoreDbConnection {
-    Connection connection = getConnection();
+    Connection connection = getConnection(); // когда соединение закрывается?
     private final String GET_CASH_CUSTOMER = "select cash from customers where id = ?";
     private final String GET_PRICE_PRODUCT = "select price from products where id = ?";
     private final String UPDATE_CASH_CUSTOMER = "update customers set cash = cash - ? where id = ?";
@@ -56,7 +56,6 @@ public class TransactionDb extends StoreDbConnection {
             } else {
                 return false;
             }
-
 
         } catch (SQLException e) {
             e.printStackTrace();

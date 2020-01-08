@@ -9,9 +9,8 @@ import java.util.List;
 
 import org.itstep.Entity.Product;
 
-
 public class ProductDb extends StoreDbConnection {
-    Connection connection = getConnection();
+    Connection connection = getConnection(); // когда соединение закрывается?
     private final String SQL = "INSERT INTO Products(type, title, quantity, price, seller_id) VALUE (?, ?, ?, ?, ?)";
     private final String GET_ALL_PRODUCTS = "SELECT id, type, title, price, seller_id, quantity FROM products";
 
@@ -22,7 +21,6 @@ public class ProductDb extends StoreDbConnection {
             preparedStatement.setInt(3, product.getQuantity());
             preparedStatement.executeUpdate();
 
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -30,7 +28,6 @@ public class ProductDb extends StoreDbConnection {
 
     public List<Product> getAllProduct() {
         List<Product> productList = new ArrayList<>();
-
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(GET_ALL_PRODUCTS)) {
             ResultSet resultSet = preparedStatement.executeQuery();

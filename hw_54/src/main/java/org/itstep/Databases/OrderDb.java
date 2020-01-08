@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class OrderDb extends StoreDbConnection {
-    Connection connection = getConnection();
+    Connection connection = getConnection(); // когда соединение закрывается?
     private final String MADE_ORDER = "insert orders(customer_id, seller_id, product_id) values (?, ?, ?)";
 
     public void madeOrder(Order order) {
@@ -22,6 +22,4 @@ public class OrderDb extends StoreDbConnection {
         }
 
     }
-
-
 }

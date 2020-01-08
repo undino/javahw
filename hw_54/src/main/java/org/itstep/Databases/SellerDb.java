@@ -16,13 +16,11 @@ import java.util.List;
 import java.util.Map;
 
 public class SellerDb extends StoreDbConnection {
-    Connection connection = getConnection();
+    Connection connection = getConnection(); // когда соединение закрывается?
     private static final String INSERT_SELLER = "INSERT INTO sellers(login, password, role_id) values(?, ?, ?)";
     private static final String SELECT_SELLER = "SELECT id, login, password, cash FROM sellers WHERE login=? and password=?";
-    private static final String PRODUCTS_OF_SELLER = "select products.type, products.title, products.quantity, products.price\n" +
-            "from products \n" +
-            "join sellers  on products.seller_id = sellers.id\n" +
-            "where sellers.login = ?;";
+    private static final String PRODUCTS_OF_SELLER = "select products.type, products.title, products.quantity, products.price\n"
+            + "from products \n" + "join sellers  on products.seller_id = sellers.id\n" + "where sellers.login = ?;";
     private static final String ADD_PRODUCTS = "insert products (type, title, quantity, price, seller_id) values (?, ?, ?, ?, ?)";
     private static final String GET_SELLER = "select login, password from sellers where id = ?";
 
@@ -105,27 +103,27 @@ public class SellerDb extends StoreDbConnection {
     }
 
     public String addProducts(Product product) {
-        try (PreparedStatement preparedStatement = connection.prepareStatement(ADD_PRODUCTS)){
-                preparedStatement.setString(1, product.getType());
-                preparedStatement.setString(2, product.getTitle());
-                preparedStatement.setInt(3, product.getQuantity());
-                preparedStatement.setDouble(4, product.getPrice());
-                preparedStatement.setInt(5, product.getSellerId());
-                int result = preparedStatement.executeUpdate();
-                if (result > 0){
-                    DynamicPageResponse dynamicPageResponse = new DynamicPageResponse();
-                    PreparedStatement preparedStatement1 = connection.prepareStatement(GET_SELLER);
-                    preparedStatement1.setInt(1, product.getSellerId());
-                    ResultSet resultSet = preparedStatement1.executeQuery();
-                    String login = "";
-                    String password = "";
-                    while (resultSet.next()){
-                        login = resultSet.getString("login");
-                        password = resultSet.getString("password");
-                    }
-
-                    return dynamicPageResponse.sellerPage(new Seller(login, password));
+        try (PreparedStatement preparedStatement = connection.prepareStatement(ADD_PRODUCTS)) {
+            preparedStatement.setString(1, product.getType());
+            preparedStatement.setString(2, product.getTitle());
+            preparedStatement.setInt(3, product.getQuantity());
+            preparedStatement.setDouble(4, product.getPrice());
+            preparedStatement.setInt(5, product.getSellerId());
+            int result = preparedStatement.executeUpdate();
+            if (result > 0) {
+                DynamicPageResponse dynamicPageResponse = new DynamicPageResponse();
+                PreparedStatement preparedStatement1 = connection.prepareStatement(GET_SELLER);
+                preparedStatement1.setInt(1, product.getSellerId());
+                ResultSet resultSet = preparedStatement1.executeQuery();
+                String login = "";
+                String password = "";
+                while (resultSet.next()) {
+                    login = resultSet.getString("login");
+                    password = resultSet.getString("password");
                 }
+
+                return dynamicPageResponse.sellerPage(new Seller(login, password));
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
