@@ -13,7 +13,7 @@ public class UserDao extends GenericDao<User> {
     private static final String INSERT = "INSERT INTO users(login, password) VALUES(?, ?)";
     private static final String SELECT = "SELECT id, login, password from users";
     private static final String DELETE = "DELETE FROM users WHERE login = ? and password = ?";
-    private static final String UPDATE = "UPDATE users SET login = ? and password = ? WHERE ";
+    private static final String UPDATE = "UPDATE users SET login = ? and password = ? WHERE "; // where что?
 
     public UserDao(String connectionString, String user, String password) throws SQLException {
         super(connectionString, user, password);
@@ -41,15 +41,14 @@ public class UserDao extends GenericDao<User> {
     @Override
     public List<User> findAll() {
         List<User> listUser = new ArrayList<>();
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT)){
+        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT)) {
             ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String login = resultSet.getString("login");
                 String password = resultSet.getString("password");
                 listUser.add(new User(id, login, password));
             }
-
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -60,7 +59,8 @@ public class UserDao extends GenericDao<User> {
 
     @Override
     public void update(User data) {
-        try(PreparedStatement preparedStatement = connection.prepareStatement(UPDATE)){
+        // транзакции???
+        try (PreparedStatement preparedStatement = connection.prepareStatement(UPDATE)) {
             preparedStatement.setString(1, data.getLogin());
             preparedStatement.setString(2, data.getPassword());
             preparedStatement.setString(3, "newLogin");
@@ -70,13 +70,12 @@ public class UserDao extends GenericDao<User> {
             e.printStackTrace();
         }
 
-
     }
 
     @Override
     public void delete(User data) {
-
-        try(PreparedStatement preparedStatement = connection.prepareStatement(DELETE)){
+        // транзакции???
+        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE)) {
             preparedStatement.setString(1, data.getLogin());
             preparedStatement.setString(2, data.getPassword());
             preparedStatement.executeUpdate();

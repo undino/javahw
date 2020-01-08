@@ -49,7 +49,7 @@ public class UserServlet extends HttpServlet {
         if (listUser.indexOf(new User(login, password)) >= 0) {
             writer.println("<h2>Вы успешно вошли</h2>");
         } else {
-            writer.println("<h2>Попытка входа не уадалсь</h2>");
+            writer.println("<h2>Попытка входа не уадалась</h2>");
         }
     }
 }
