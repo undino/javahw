@@ -1,0 +1,49 @@
+video: https://youtu.be/AJko1IbOXtQ
+
+0. Импортировать базу данных из файла db.sql
+1. Из таблиц locations и countries выбрать адреса (location_id, street_address, city, state_province, country_name) всех подразделений
+2. Из таблиц employees и departments выбрать имена сотрудников (first_name, last name) и названия подразделений (department_name) в которых они работают.
+3. Из таблиц locations, employees и departments выбрать имена (first_name, last_name), должность (job_id), номер подразделения (department_id), 
+   и названия подразделения для сотрудников из города London
+
+
+4. Из таблиц employees, departments и locations выбрать названия подразделений (department_name), имя сотрудника (first_name), и город (city)
+
+Для каждого запроса сделать представление
+
+		
+		
+		
+		Выполнение дз
+		
+
+
+	1.	create view v_locations_countries
+		as
+		select location_id, street_address, city, state_province, country_name from locations
+		join countries c on locations.COUNTRY_ID = c.COUNTRY_ID;
+		
+		select * from v_locations_countries;
+	
+	2.	create view v_employees_departments
+		as
+		select first_name, last_name, department_name from employees
+		join departments d on employees.DEPARTMENT_ID = d.DEPARTMENT_ID
+		
+		select * from v_employees_departments;
+	
+	3.	create view v_job_history_departments_employees
+		as
+		select first_name, last_name, e.job_id, d.department_id  from job_history
+		join departments d on job_history.DEPARTMENT_ID = d.DEPARTMENT_ID
+		join employees e on d.DEPARTMENT_ID = e.DEPARTMENT_ID;
+
+		select * from v_job_history_departments_employees;
+		
+	4.	create view v_employees_departments_locations
+		as
+		select department_name, first_name, city from employees
+		join departments d on employees.DEPARTMENT_ID = d.DEPARTMENT_ID
+		join locations l on d.LOCATION_ID = l.LOCATION_ID;
+		
+		select * from v_employees_departments_locations;
