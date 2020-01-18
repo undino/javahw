@@ -7,25 +7,29 @@ import java.sql.SQLException;
 import static java.lang.Class.forName;
 
 public class StoreDbConnection {
+
+    // Это лучше вынести в конфигурационный файл
     private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String DB_URL = "jdbc:mysql://localhost:3306/Store?serverTimezone=Europe/Kiev&characterEncoding=utf8";
     private static final String DB_LOGIN = "root";
     private static final String DB_PASSWORD = "";
 
-   public Connection getConnection() {
-
-        Connection connection = null;
-
+    static {
         try {
-            forName(DB_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PASSWORD);
-
-        } catch (ClassNotFoundException | SQLException ex) {
+            Class.forName(DB_DRIVER);
+        } catch (ClassNotFoundException ex) {
             ex.printStackTrace();
         }
-
-        return connection;
     }
 
+    public Connection getConnection() {
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PASSWORD);
 
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return connection;
+    }
 }

@@ -1,6 +1,5 @@
 package org.itstep.Databases;
 
-
 import org.itstep.Entity.Customer;
 
 import java.sql.Connection;
@@ -14,17 +13,15 @@ import java.util.Map;
 
 public class CustomerDb extends StoreDbConnection {
 
-    Connection connection = getConnection();
+    Connection connection = getConnection(); // когда соединение закрывается?
+
     private static final String INSERT_CUSTOMER = "INSERT INTO customers(login, password, role_id) values(?, ?, ?)";
     private static final String INSERT_MONEY = "update customers set cash = cash + ? where login=?";
     private static final String SELECT_CUSTOMER = "SELECT id, login, password, cash FROM customers WHERE login=? and password=?";
-    private static final String ORDERS_OF_CUSTOMER = "select products.type, products.title, count(*) count from orders\n" +
-            "join customers on orders.customer_id = customers.id\n" +
-            "join sellers on orders.seller_id = sellers.id\n" +
-            "join products on orders.product_id = products.id\n" +
-            "where customers.login = ?\n" +
-            "group by products.title";
-
+    private static final String ORDERS_OF_CUSTOMER = "select products.type, products.title, count(*) count from orders\n"
+            + "join customers on orders.customer_id = customers.id\n"
+            + "join sellers on orders.seller_id = sellers.id\n" + "join products on orders.product_id = products.id\n"
+            + "where customers.login = ?\n" + "group by products.title";
 
     public void add(Customer customer) {
 
@@ -80,17 +77,17 @@ public class CustomerDb extends StoreDbConnection {
         return map;
     }
 
-    public List<String> getOrders(Customer customer){
+    public List<String> getOrders(Customer customer) {
         List<String> listOrders = new ArrayList<>();
         String result = "";
-        try(PreparedStatement preparedStatement = connection.prepareStatement(ORDERS_OF_CUSTOMER)){
+        try (PreparedStatement preparedStatement = connection.prepareStatement(ORDERS_OF_CUSTOMER)) {
             preparedStatement.setString(1, customer.getLogin());
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 result += resultSet.getString("type") + " | ";
                 result += resultSet.getString("title") + " | ";
-                result += resultSet.getString("count") ;
+                result += resultSet.getString("count");
                 listOrders.add(result);
                 result = "";
             }
@@ -101,15 +98,15 @@ public class CustomerDb extends StoreDbConnection {
         return listOrders;
     }
 
-    public boolean addMoney(Customer customer, double money){
+    public boolean addMoney(Customer customer, double money) {
         boolean result = false;
-        try(PreparedStatement preparedStatement = connection.prepareStatement(INSERT_MONEY)) {
-                preparedStatement.setDouble(1, money);
-                preparedStatement.setString(2, customer.getLogin());
-                int i = preparedStatement.executeUpdate();
-                if (i > 0) {
-                    result = true;
-                }
+        try (PreparedStatement preparedStatement = connection.prepareStatement(INSERT_MONEY)) {
+            preparedStatement.setDouble(1, money);
+            preparedStatement.setString(2, customer.getLogin());
+            int i = preparedStatement.executeUpdate();
+            if (i > 0) {
+                result = true;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -117,4 +114,3 @@ public class CustomerDb extends StoreDbConnection {
         return result;
     }
 }
-
