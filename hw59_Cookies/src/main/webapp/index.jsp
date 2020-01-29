@@ -118,7 +118,7 @@
     <ul>
         <% Cookie[] cookie = request.getCookies(); %>
 
-        <% for (Cookie c : cookie) { %>
+        <% if(cookie != null) for (Cookie c : cookie) { %>
         <li>Name: <% out.write(c.getName());%></li>
         <li>Value: <% out.write(c.getValue());%></li>
         <li>Lifetime: <% out.write(String.valueOf(c.getMaxAge()));%></li>

@@ -51,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blog-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,6 +118,11 @@
       <updated>1579625547175</updated>
       <workItem from="1579625552320" duration="12938000" />
       <workItem from="1579945981623" duration="843000" />
+      <workItem from="1579946853073" duration="2034000" />
+      <workItem from="1580027794568" duration="635000" />
+      <workItem from="1580032615072" duration="592000" />
+      <workItem from="1580034522918" duration="597000" />
+      <workItem from="1580158731096" duration="135000" />
     </task>
     <servers />
   </component>
@@ -133,10 +138,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/1366.-256.1280.984/0.0.1366.728@0.0.1366.728" timestamp="1579628196037" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1579946834860">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1580158887624">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579946834860" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580027840437" />
+    <state x="463" y="118" key="FileChooserDialogImpl/1366.-256.1280.984/0.0.1366.728@0.0.1366.728" timestamp="1580158887624" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1579946838089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -161,5 +167,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="315" y="61" width="736" height="606" key="find.popup/1366.-256.1280.984/0.0.1366.728@0.0.1366.728" timestamp="1579640565664" />
+    <state x="65" y="65" key="new project wizard" timestamp="1579951423472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="65" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1579951423472" />
   </component>
 </project>
