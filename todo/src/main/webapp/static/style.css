@@ -1,0 +1,92 @@
+body {
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+label {
+	display: inline-block;
+	width: 115px;
+	margin: 10px 20px;
+}
+
+h4 {
+	margin-left: 20px;
+}
+
+input {
+	display: block;
+	display: inline-block;
+}
+
+.form {
+	border-top-left-radius: 200px 75px;
+	border-top-right-radius: 200px 75px;
+	width: 400px;
+	margin: 20px;
+	display: inline-block;
+	float: left;
+	width: 400px;
+
+}
+
+.list {
+	border-top-left-radius: 300px 95px;
+	border-top-right-radius: 300px 95px;
+	float: right;
+	width: auto;
+	margin: 20px;
+	display: inline-block;
+	width: 550px;
+	float: right;
+}
+
+h3 {
+	position: relative;
+	text-align: center;
+}
+
+.todo_list {
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+p {
+	display: inline-block;
+}
+
+.header_todo {
+	font-family: cursive;
+	font-size: 1.2em;
+}
+
+.date_create {
+	margin: 20px 20px;
+}
+
+.content {
+	font-family: Arial, Verdana, Helvetica;
+}
+
+.date_create {
+	float: right;
+}
+
+.todo_list {
+	width: 500px;
+	padding: 0 10px;
+}
+
+a {
+	float: right;
+	margin: 20px 20px;
+}
+
+.date_start, .date_end {
+	color: graytext;
+}
+
+button {
+	margin: 20px 20px;
+	position: relative;
+	left: 290px;
+}
