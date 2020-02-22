@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="spring" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" isELIgnored="false" language="java" %>
 <html>
 <head>
     <title>Create new student</title>
@@ -24,7 +25,12 @@
 
     <div>
         <label for="group">Group: </label>
-        <input name="group" id="group" required/>
+<%--        <input type="number" name="group" id="group" required/>--%>
+        <select name="group" id="group">
+            <spring:forEach var="group" items="${groups}">
+            <option value="${group.id}">${group.name}</option>
+            </spring:forEach>
+        </select>
     </div>
 
     <div>

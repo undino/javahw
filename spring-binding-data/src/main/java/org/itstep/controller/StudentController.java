@@ -1,7 +1,8 @@
 package org.itstep.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import org.itstep.data.GroupRepository;
 import org.itstep.data.StudentRepository;
+import org.itstep.model.Group;
 import org.itstep.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,16 +11,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.util.List;
 
 @RequestMapping("/students")
 @Controller
 public class StudentController {
 
-    final StudentRepository repository;
+    StudentRepository repository;
+    GroupRepository groupRepository;
 
     @Autowired
-    public StudentController(StudentRepository repository) {
+    public StudentController(StudentRepository repository, GroupRepository groupRepository) {
         this.repository = repository;
+        this.groupRepository = groupRepository;
     }
 
     @GetMapping
@@ -29,13 +35,24 @@ public class StudentController {
     }
 
     @GetMapping("/new")
-    public String createStudent() {
+    public String createStudent(Model model) {
+        model.addAttribute("groups", groupRepository.findAll());
         return "students/create";
     }
 
     @PostMapping("/new")
-    public String createStudent(Student student) {
-        int id = repository.save(student);
+    public String createStudent(Student student, RedirectAttributes redirectAttributes) {
+        String message = "";
+        int id = 0;
+        try {
+            id = repository.save(student);
+            message = "successfully saved";
+        } catch (Exception ex) {
+            System.out.println(ex.getLocalizedMessage());
+            message = "some error";
+        }
+        redirectAttributes.addFlashAttribute("error", message);
+        System.out.println(student);
         return "redirect:/students/info/" + id;
     }
 
@@ -53,7 +70,13 @@ public class StudentController {
     }
 
     @GetMapping("/update/{id}")
-    public String update() {
+    public String update(@PathVariable int id, Model model) {
+        Student student = repository.find(id);
+        System.out.println(student);
+        model.addAttribute("student", student);
+        List<Group> list = groupRepository.findAll();
+        model.addAttribute("groups", list);
+        System.out.println(list);
         return "students/update";
     }
 
@@ -63,6 +86,5 @@ public class StudentController {
         repository.update(student);
         return "redirect:/students";
     }
-
 
 }

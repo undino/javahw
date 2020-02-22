@@ -9,7 +9,8 @@
     <h1>Home page</h1>
 
 <p>
-    <a href="<spring:url value="/students"/>">Students</a>
+    <a href="<spring:url value="/students"/>">Students</a><br>
+    <a href="<spring:url value="/groups"/>">Groups</a>
 </p>
 </body>
 </html>

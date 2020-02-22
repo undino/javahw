@@ -11,13 +11,11 @@
 
 <div>${error}</div>
 <div>
-    <p>Id: ${student.id}</p>
-    <p>First Name: ${student.firstName}</p>
-    <p>Last Name: ${student.lastName}</p>
-    <p>Age: ${student.age}</p>
+    <p>Id: ${group.id}</p>
+    <p>Group name: ${group.name}</p>
 </div>
 <p>
-    <a href="<c:url value="/students"/>">Go to students list</a>
+    <a href="<c:url value="/groups"/>">Go to students list</a>
 </p>
 </body>
 </html>
