@@ -1,6 +1,17 @@
-drop database if exists academy;
-create database if not exists academy default character set utf8;
-use academy;
+-- create schema academy;
+-- use academy;
+create table groups
+(
+    id   int auto_increment primary key,
+    name varchar(50) not null
+);
+
+insert into groups (name)
+values ('Java'),
+       ('PHP'),
+       ('SQL'),
+       ('JavaScript');
+
 create table students
 (
     id         int primary key auto_increment,
@@ -11,8 +22,9 @@ create table students
     constraint fk_student_group foreign key (group_id) references groups (id)
 );
 
-create table groups
-(
-    id   int auto_increment primary key,
-    name varchar(50) not null
-);
+insert into students (first_name, last_name, age, group_id)
+VALUES
+('Орлов', 'Сергей', 28, 1),
+('Энштейн', 'Фльберт', 19, 1),
+('Маск', 'Илон', 49, 2),
+('Гейтс', 'Билл', 65, 4);

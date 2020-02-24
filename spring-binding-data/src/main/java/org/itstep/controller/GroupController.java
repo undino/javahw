@@ -3,6 +3,7 @@ package org.itstep.controller;
 import org.itstep.data.GroupRepository;
 import org.itstep.model.Group;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.sql.SQLDataException;
+import java.sql.SQLException;
 
 @RequestMapping("/groups")
 @Controller
@@ -40,7 +42,12 @@ public class GroupController {
         String message = group.getId() == 0 ? "successfully saved" : "some error";
         redirectAttributes.addFlashAttribute("error", message);
         int id = groupRepository.save(group);
-        return "redirect:/groups/info/" + id;
+        if (id != 0) {
+            return "redirect:/groups/info/" + id;
+        } else {
+            return "redirect:/groups";
+        }
+
     }
 
     @GetMapping("/info/{id}")
@@ -50,9 +57,8 @@ public class GroupController {
     }
 
     @GetMapping("/delete/{id}")
-    public String delete(@PathVariable int id, RedirectAttributes redirectAttributes) {
+    public String delete(@PathVariable int id, RedirectAttributes redirectAttributes) throws SQLException {
         String message = "";
-
         boolean resultDeleteGroup = groupRepository.delete(groupRepository.find(id));
         message = resultDeleteGroup ? "group successfully delete" : "error delete group";
         redirectAttributes.addFlashAttribute("error", message);

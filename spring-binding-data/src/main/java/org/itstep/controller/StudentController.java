@@ -43,17 +43,16 @@ public class StudentController {
     @PostMapping("/new")
     public String createStudent(Student student, RedirectAttributes redirectAttributes) {
         String message = "";
-        int id = 0;
-        try {
-            id = repository.save(student);
-            message = "successfully saved";
-        } catch (Exception ex) {
-            System.out.println(ex.getLocalizedMessage());
+        int id = repository.save(student);
+        if (id == 0) {
             message = "some error";
+            return "redirect:/students";
+        } else {
+            message = "successfully saved";
+            redirectAttributes.addFlashAttribute("error", message);
+            return "redirect:/students/info/" + id;
         }
-        redirectAttributes.addFlashAttribute("error", message);
-        System.out.println(student);
-        return "redirect:/students/info/" + id;
+
     }
 
     @GetMapping("/info/{id}")

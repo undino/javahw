@@ -12,8 +12,9 @@
 <h1>Students</h1>
 <p><a href="<spring:url value="/students/new"/>">Create student</a></p>
 <p><a href="<spring:url value="/"/>">Home groups</a></p>
+<%--<sql:setDataSource var="data" driver="com.mysql.jdbc.Driver"--%>
 <sql:setDataSource var="data" driver="com.mysql.jdbc.Driver"
-                   url="jdbc:mysql://localhost/academy" user="root" password=""/>
+                   url="jdbc:h2:mem:dataSource;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false" user="sa" password=""/>
 
 <table>
     <thead>

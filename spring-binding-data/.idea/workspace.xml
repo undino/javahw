@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hw54/hw54.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hw_54/.idea/hw_54.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-todo/web-todo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" afterDir="false" />
@@ -39,17 +34,18 @@
       <change beforePath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javahw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/GroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/data/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/data/GroupRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/data/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/data/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-jdbc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" afterDir="false" />
@@ -103,32 +99,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="academy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="academy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="groups: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="academy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="students: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="H2 - default@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -143,6 +114,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -159,8 +133,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;h2" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -174,7 +149,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -230,12 +205,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:academy@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2522ef39" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:academy@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@77ce0423" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@567e2c60" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -260,6 +230,8 @@
       <workItem from="1582229364744" duration="6403000" />
       <workItem from="1582322982795" duration="11698000" />
       <workItem from="1582367084338" duration="15835000" />
+      <workItem from="1582463063142" duration="14435000" />
+      <workItem from="1582577883680" duration="3720000" />
     </task>
     <servers />
   </component>
@@ -271,14 +243,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1581961760087" />
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581965777414">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581965777414" />
-    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1582324741839">
+    <state x="393" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582579737840">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582324741839" />
+    <state x="393" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582579737840" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581965777414" />
+    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1582489281355">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582489281355" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581967813182" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1582378425047">
       <screen x="0" y="0" width="1366" height="728" />
@@ -288,33 +261,35 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582397975394" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1582399006677">
+    <state width="1322" height="216" key="GridCell.Tab.0.bottom" timestamp="1582581556856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582399006677" />
+    <state width="1322" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
     <state width="1877" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868097" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1582399006677">
+    <state width="1322" height="216" key="GridCell.Tab.0.center" timestamp="1582581556856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582399006677" />
+    <state width="1322" height="216" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
     <state width="1877" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1582399006662">
+    <state width="1322" height="216" key="GridCell.Tab.0.left" timestamp="1582581556855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582399006662" />
+    <state width="1322" height="216" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556855" />
     <state width="1877" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1582399006677">
+    <state width="1322" height="216" key="GridCell.Tab.0.right" timestamp="1582581556856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582399006677" />
+    <state width="1322" height="216" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
     <state width="1877" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581965808429">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="196" height="320" key="HiddenNamespacesPopup" timestamp="1582579867681">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="196" height="320" key="HiddenNamespacesPopup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582579867681" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1581965808429" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1581533171793">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="0" key="SettingsEditor" timestamp="1582473824583">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="313" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582473824583" />
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581533171793" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582367188479">
       <screen x="0" y="0" width="1366" height="728" />
