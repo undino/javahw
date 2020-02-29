@@ -55,7 +55,7 @@ public class GroupRepository implements Repository<Group, Integer> {
     public boolean delete(Group data) {
         boolean result = false;
         try {
-            result = jdbcTemplate.update("DELETE FROM `groups` where id = ?", data.getId()) > 0;
+            result = jdbcTemplate.update("DELETE FROM groups where id = ?", data.getId()) > 0;
         } catch (Throwable e) {
             e.printStackTrace();
         }

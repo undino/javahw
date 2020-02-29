@@ -15,6 +15,10 @@
     <mvc:annotation-driven />
     <mvc:resources mapping="/static/**" location="/resources/" />
 
+    <bean class="com.fasterxml.jackson.databind.ObjectMapper" >
+
+    </bean>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/view/" p:suffix=".jsp"/>
 </beans>

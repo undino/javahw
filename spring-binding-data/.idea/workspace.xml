@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" afterDir="false" />
@@ -35,18 +35,10 @@
       <change beforePath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javahw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/GroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/data/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/data/GroupRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/data/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/data/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-jdbc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/students/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" afterDir="false" />
@@ -99,6 +91,28 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="academy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="academy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="students: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="H2 - default@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
@@ -111,6 +125,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -138,7 +153,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-binding-data" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -152,43 +167,461 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.itstep.model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\spring-binding-data\src\main\webapp\WEB-INF\view\group" />
       <recent name="C:\Users\User\Desktop\spring-binding-data\src\main\webapp\WEB-INF\view\students" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.itstep.model" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="spring-binding-data [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="tomcat7:run" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;name&quot;: &quot;ok&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;TEST&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 1,&#10;  &quot;name&quot;: &quot;ok&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/groups" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;name&quot;: &quot;TEST&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/3" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 0,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 0,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 0,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;firstName&quot;: &quot;gogogo&quot;,&#10;  &quot;lastName&quot;: &quot;ogogog&quot;,&#10;  &quot;age&quot;: 20,&#10;  &quot;group&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 5,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 5,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: ,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;id&quot;: 5,&#10;&quot;firstName&quot;: &quot;test&quot;,&#10;&quot;lastName&quot;: &quot;test&quot;,&#10;&quot;age&quot;: 11,&#10;&quot;group_id&quot;: 3&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;id&quot;" />
+                <option name="value" value="5," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;firstName&quot;" />
+                <option name="value" value="&quot;test&quot;," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;lastName&quot;" />
+                <option name="value" value="&quot;test&quot;," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;age&quot;" />
+                <option name="value" value="11," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;group_id&quot;" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="}" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;id&quot;" />
+                <option name="value" value="5," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;firstName&quot;" />
+                <option name="value" value="&quot;test&quot;," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;age&quot;" />
+                <option name="value" value="11," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;group_id&quot;" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="}" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/put/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;id&quot;" />
+                <option name="value" value="5," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;firstName&quot;" />
+                <option name="value" value="&quot;test&quot;," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;age&quot;" />
+                <option name="value" value="11," />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="&quot;group&quot;" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="}" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/studetns/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.student#10">
+    <configuration name="student#10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test/java/student.http" index="10" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="student#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test/java/student.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="student#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test/java/student.http" index="7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="student#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test/java/student.http" index="8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="student#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test/java/student.http" index="9" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.spring-binding-data [tomcat7:run]" />
+        <item itemvalue="HTTP Request.student#10" />
+        <item itemvalue="HTTP Request.student#9" />
+        <item itemvalue="HTTP Request.student#8" />
+        <item itemvalue="HTTP Request.student#7" />
+        <item itemvalue="HTTP Request.student#6" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +638,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:academy@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@567e2c60" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@9e75e1e" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -231,7 +664,10 @@
       <workItem from="1582322982795" duration="11698000" />
       <workItem from="1582367084338" duration="15835000" />
       <workItem from="1582463063142" duration="14435000" />
-      <workItem from="1582577883680" duration="3720000" />
+      <workItem from="1582577883680" duration="4165000" />
+      <workItem from="1582749925344" duration="5230000" />
+      <workItem from="1582835854159" duration="5945000" />
+      <workItem from="1582982967614" duration="5845000" />
     </task>
     <servers />
   </component>
@@ -243,66 +679,82 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1581961760087" />
-    <state x="393" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582579737840">
+    <state x="274" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582838791703">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="393" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582579737840" />
+    <state x="274" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582838791703" />
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581965777414" />
-    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1582489281355">
+    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1582983191774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582489281355" />
+    <state x="544" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582983191774" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581967813182" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1582378425047">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582378425047" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1582397975394">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1582749986698">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582397975394" />
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom" timestamp="1582581556856">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582749986698" />
+    <state width="1322" height="181" key="GridCell.Tab.0.bottom" timestamp="1582990037695">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
+    <state width="1322" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582990037695" />
     <state width="1877" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868097" />
-    <state width="1322" height="216" key="GridCell.Tab.0.center" timestamp="1582581556856">
+    <state width="1322" height="181" key="GridCell.Tab.0.center" timestamp="1582990037694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
+    <state width="1322" height="181" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582990037694" />
     <state width="1877" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="1322" height="216" key="GridCell.Tab.0.left" timestamp="1582581556855">
+    <state width="1322" height="181" key="GridCell.Tab.0.left" timestamp="1582990037694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556855" />
+    <state width="1322" height="181" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582990037694" />
     <state width="1877" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="1322" height="216" key="GridCell.Tab.0.right" timestamp="1582581556856">
+    <state width="1322" height="181" key="GridCell.Tab.0.right" timestamp="1582990037694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="216" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582581556856" />
+    <state width="1322" height="181" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582990037694" />
     <state width="1877" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581967868096" />
-    <state width="196" height="320" key="HiddenNamespacesPopup" timestamp="1582579867681">
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom" timestamp="1582841817451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="196" height="320" key="HiddenNamespacesPopup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582579867681" />
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582841817451" />
+    <state width="1322" height="216" key="GridCell.Tab.1.center" timestamp="1582841817451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582841817451" />
+    <state width="1322" height="216" key="GridCell.Tab.1.left" timestamp="1582841817451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582841817451" />
+    <state width="1322" height="216" key="GridCell.Tab.1.right" timestamp="1582841817451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582841817451" />
+    <state width="196" height="320" key="HiddenNamespacesPopup" timestamp="1582836818867">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="320" key="HiddenNamespacesPopup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582836818867" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1581965808429" />
     <state x="313" y="0" key="SettingsEditor" timestamp="1582473824583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="313" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582473824583" />
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581533171793" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582367188479">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582983017094">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582367188479" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582983017094" />
     <state x="438" y="168" key="run.anything.popup" timestamp="1582234042942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="168" key="run.anything.popup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582234042942" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581533125682" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582396789645">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582984577353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582396789645" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1582984577353" />
   </component>
 </project>
