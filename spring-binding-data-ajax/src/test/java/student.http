@@ -1,0 +1,79 @@
+
+
+# test student
+
+GET http://localhost:8080/spring-binding-data/api/students/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/spring-binding-data/api/students
+Accept: application/json
+
+###
+
+POST http://localhost:8080/spring-binding-data/api/students
+Content-Type: application/json
+
+{
+  "firstName": "gogogo",
+  "lastName": "ogogog",
+  "age": 20,
+  "group": 1
+}
+
+###
+
+#any variable from client student`s id, because vatiable took from PathVariable(path = "/put/{id}")
+PUT http://localhost:8080/spring-binding-data/api/students/3
+Content-Type: application/json
+
+{
+  "id": 0,
+  "firstName": "test",
+  "lastName": "test",
+  "age": 11,
+  "group": 3
+}
+
+###
+
+DELETE http://localhost:8080/spring-binding-data/api/students/3
+
+###
+
+# test group
+
+GET http://localhost:8080/spring-binding-data/api/groups
+Accept: application/json
+
+###
+
+GET http://localhost:8080/spring-binding-data/api/groups/2
+Accept: application/json
+
+###
+
+POST http://localhost:8080/spring-binding-data/api/groups
+Content-Type: application/json
+
+{
+  "name": "TEST"
+}
+
+###
+
+PUT http://localhost:8080/spring-binding-data/api/groups/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "ok"
+}
+
+###
+
+DELETE http://localhost:8080/spring-binding-data/api/groups/5
+Content-Type: application/json
+
+###
