@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>index1</title>
@@ -66,7 +67,6 @@
             height: 35px;
             float: left;
             margin-right: 50px;
-
         }
 
 
@@ -85,33 +85,35 @@
             top: 74%;
             right: 8%;
         }
-
     </style>
 </head>
-<body>
-<div class="outside">
-    <div class="inside"><p class="line">CREDIT CARD DETAILS</p></div>
-    <form action="registration" method="get">
-        <fieldset>
-            <label for="numberCard">Card Number</label><br>
-            <input class="inp1" type="text" name="numCard" placeholder="1234 5678 9012 3456" id="numberCard" required
-                   tabindex="1"
-                   maxlength="19"><br>
-            <label for="nameCard">Name On Card</label><br>
-            <input class="inp1" type="text" name="nameOnCard" id="nameCard" placeholder="Name Surname"><br>
-            <label class="lb2" for="month">Expiry Date<br>
-                <input class="inp2" type="text" name="day" id="month" maxlength="2" placeholder="02">
-            </label>
-            <label class="lb2 2" for="year"><br>
-                <input class="inp2" type="text" name="year" id="year" maxlength="4" placeholder="2017">
-            </label>
-            <label class="lb2" for="CVV">CVV/CVN<br>
-                <input class="inp2" name="cvn" type="password" id="CVV" maxlength="3" placeholder="***">
-            </label>
 
-        </fieldset>
-        <button>Go!</button>
-    </form>
-</div>
+<body>
+    <div class="outside">
+        <div class="inside">
+            <p class="line">CREDIT CARD DETAILS</p>
+        </div>
+        <form action="registration" method="get">
+            <fieldset>
+                <label for="numberCard">Card Number</label><br>
+                <input class="inp1" type="text" name="numCard" placeholder="1234 5678 9012 3456" id="numberCard"
+                    required tabindex="1" maxlength="19"><br>
+                <label for="nameCard">Name On Card</label><br>
+                <input class="inp1" type="text" name="nameOnCard" id="nameCard" placeholder="Name Surname"><br>
+                <label class="lb2" for="month">Expiry Date<br>
+                    <input class="inp2" type="text" name="day" id="month" maxlength="2" placeholder="02">
+                </label>
+                <label class="lb2 2" for="year"><br>
+                    <input class="inp2" type="text" name="year" id="year" maxlength="4" placeholder="2017">
+                </label>
+                <label class="lb2" for="CVV">CVV/CVN<br>
+                    <input class="inp2" name="cvn" type="password" id="CVV" maxlength="3" placeholder="***">
+                </label>
+
+            </fieldset>
+            <button>Go!</button>
+        </form>
+    </div>
 </body>
+
 </html>
