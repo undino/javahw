@@ -1,0 +1,32 @@
+label,
+input,
+select {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    margin-bottom: 25px;
+}
+
+form {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 100px;
+    background: grey;
+    border: black 1px solid;
+    border-radius: 30px;
+    width: 400px;
+}
+
+#title,
+#description {
+    height: 40px;
+    width: 300px;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 1.3em;
+}

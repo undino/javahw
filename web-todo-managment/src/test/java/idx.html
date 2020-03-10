@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        menu {
+            height: 75px;
+            background: aqua;
+        }
+
+        #todo {
+            position: relative;
+            top: 15px;
+            left: auto;
+            margin: auto;
+            font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+            font-size: 1.05em;
+            width: 600px;
+            background: orange;
+            padding: 20px 0 20px 40px;
+
+        }
+
+        .lineDiv {
+            width: 500px;
+            display: inline-block;
+        }
+
+        button{
+            position: absolute;
+            top: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<menu>
+
+</menu>
+<div id="todo">
+
+
+        <div class="lineDiv" id="title">Заглавие:<p></p> </div>
+        <div class="lineDiv" id="description">Описание: <p></p></div>
+        <div class="lineDiv" id="created">Создан: <p></p></div>
+        <div class="lineDiv" id="lastUpdate">Обновлен:<p></p> </div>
+        <div class="lineDiv" id="priority">Приоритет:<p></p> </div>
+        <div class="lineDiv" id="done">Сделано: <p></p></div>
+        <a type="submit" value="">Удалить</a>
+    ${todo.links.self.href}
+
+
+</div>
+</body>
+</html>

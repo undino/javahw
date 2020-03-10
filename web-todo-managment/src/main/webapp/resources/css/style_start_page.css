@@ -1,0 +1,73 @@
+menu {
+    height: 75px;
+    background: aqua;
+    text-align: center;
+    font-size: 2em;
+}
+
+#todo {
+    position: relative;
+    top: 15px;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+    width: 600px;
+    background: orange;
+    padding: 10px;
+
+
+}
+
+.lineDiv {
+    width: 500px;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 1.3em;
+}
+
+button {
+    position: relative;
+    bottom: 0px;
+    width: 75px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: "Arial Black";
+    background: bisque;
+
+}
+
+#createA {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 1.5em;
+    color: black;
+    border: black 1px solid;
+    padding: 4px;
+    text-decoration: none;
+    background: cadetblue;
+}
+#deleteA {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-family: Arial;
+    font-size: 1.5em;
+    color: black;
+    border: black 1px solid;
+    padding: 4px;
+    text-decoration: none;
+    background: cadetblue;
+}
+
+
+
+p {
+    font-size: 0.7em;
+    font-family: Arial;
+}
+

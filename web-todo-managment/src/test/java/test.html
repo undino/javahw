@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label,
+        input,
+        select {
+            display: block;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            margin-bottom: 25px;
+        }
+
+        form {
+            margin-left: 50px;
+            margin-top: 50px;
+            padding: 100px;
+            background: grey;
+            border: black 1px solid;
+            border-radius: 30px;
+            width: 400px;
+        }
+
+        #title,
+        #description {
+            height: 40px;
+            width: 300px;
+            font-family: "Arial Rounded MT Bold";
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="title">Заглавие</label>
+    <input id="title" type="text" name="title" placeholder=""/>
+    <label for="description">Описание</label>
+    <input id="description" type="text" name="description" placeholder=""/>
+    <label for="priority">Приоритет</label>
+    <select name="priority" id="priority">
+        <option>HIGH</option>
+        <option>MEDIUM</option>
+        <option>LOW</option>
+    </select>
+    <label for="done">Статус выполнения</label>
+    <select name="done" id="done">
+        <option>false</option>
+        <option>true</option>
+
+    </select>
+</form>
+</body>
+</html>
