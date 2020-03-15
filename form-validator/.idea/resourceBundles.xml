@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/main/resources/message/lebel.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/message/lebel_ru.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/message/valid.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/message/valid_ru.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/lebel.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/lebel_ru.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/lebel_uk.properties" />
+      <base-name>lebel</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/valid.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/valid_ru.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/message/valid_uk.properties" />
+      <base-name>valid</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

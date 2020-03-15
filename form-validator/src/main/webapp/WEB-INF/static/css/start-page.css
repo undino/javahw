@@ -1,0 +1,34 @@
+label {
+    margin-top: 5px;
+    width: 105px;
+    display: inline-block;
+}
+
+input {
+    margin-bottom: 15px;
+
+
+}
+
+form {
+    position: relative;
+    display: inline-block;
+    background: aquamarine;
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+.error {
+    outline: 1px solid darkred;
+}
+
+.error-message {
+    color: darkred;
+}
+
+#gender {
+    position: relative;
+    left: 100px;
+}
+
