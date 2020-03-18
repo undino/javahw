@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
+        <option value="HTTP Request" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XiXT4XHiTbEkH4rvk2blnZaCqt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;h2" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Desktop\spring-binding-data\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\Desktop\spring-binding-data\src\test\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.itstep.model" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;firstName&quot;: &quot;Паша&quot;,&#10;  &quot;lastName&quot;: &quot;Вишнев&quot;,&#10;  &quot;age&quot;: 35,&#10;  &quot;group&quot;: &quot;ЕКО 20-П-3&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{  &#10;  &quot;firstName&quot;: &quot;Паша&quot;,&#10;  &quot;lastName&quot;: &quot;Вишнев&quot;,&#10;  &quot;age&quot;: 35,&#10;  &quot;group&quot;: &quot;ЕКО 20-П-3&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.spring-demo [jetty:run]">
+    <configuration name="ConversionDemo.convertToLocalDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="converters" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.ConversionDemo" />
+      <option name="METHOD_NAME" value="convertToLocalDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConversionDemo.demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="converters" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.ConversionDemo" />
+      <option name="METHOD_NAME" value="demo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-binding-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.StudentDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDaoTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-binding-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.StudentDaoTest" />
+      <option name="METHOD_NAME" value="deleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-binding-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.StudentDaoTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-demo [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.StudentDaoTest.update" />
+      <item itemvalue="JUnit.StudentDaoTest.deleteById" />
+      <item itemvalue="JUnit.StudentDaoTest" />
+      <item itemvalue="JUnit.ConversionDemo.demo" />
+      <item itemvalue="JUnit.ConversionDemo.convertToLocalDate" />
+      <item itemvalue="Maven.spring-demo [jetty:run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConversionDemo.convertToLocalDate" />
+        <item itemvalue="JUnit.ConversionDemo.demo" />
+        <item itemvalue="JUnit.StudentDaoTest" />
+        <item itemvalue="JUnit.StudentDaoTest.update" />
+        <item itemvalue="JUnit.StudentDaoTest.deleteById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="" />
+      <created>1581529892120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581529892120</updated>
+      <workItem from="1581529894450" duration="6320000" />
+      <workItem from="1581957701574" duration="9310000" />
+      <workItem from="1582130243768" duration="9429000" />
+      <workItem from="1582562112817" duration="7732000" />
+      <workItem from="1582572964394" duration="367000" />
+      <workItem from="1582735121593" duration="9208000" />
+      <workItem from="1583168750742" duration="634000" />
+      <workItem from="1583172661306" duration="4122000" />
+      <workItem from="1583269926989" duration="1173000" />
+      <workItem from="1583272593429" duration="11893000" />
+      <workItem from="1584372452732" duration="12155000" />
+      <workItem from="1584435912248" duration="8363000" />
+      <workItem from="1584464932170" duration="352000" />
+      <workItem from="1584517445181" duration="5554000" />
+      <workItem from="1584525002463" duration="14685000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#SQL_Dialects" timestamp="1581961760088">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1581961760087" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583270381338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583270381338" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583176100792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583176100792" />
+    <state x="429" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584544977435">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="429" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584544977435" />
+    <state x="544" y="51" key="#com.intellij.ide.util.MemberChooser" timestamp="1584542187681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="510" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1584442579736" />
+    <state x="544" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584542187681" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584386545174" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584525007308">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1584525007308" />
+    <state x="479" y="222" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584526555470">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="222" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1584526555470" />
+    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583272735661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583272735661" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583270134693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583270134693" />
+    <state width="413" height="466" key="DebuggerActiveHint" timestamp="1582571614710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="413" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1582571614710" />
+    <state x="493" y="162" key="FileChooserDialogImpl" timestamp="1584523505073">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="493" y="162" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584523505073" />
+    <state x="740" y="247" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584387299222" />
+    <state width="1322" height="205" key="GridCell.Tab.0.bottom" timestamp="1584547911165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1237" height="181" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584524183163" />
+    <state width="1322" height="205" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584547911165" />
+    <state width="1322" height="251" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584537391389" />
+    <state width="1877" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584387305543" />
+    <state width="1322" height="205" key="GridCell.Tab.0.center" timestamp="1584547911165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1237" height="181" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584524183162" />
+    <state width="1322" height="205" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584547911165" />
+    <state width="1322" height="251" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584537391389" />
+    <state width="1877" height="420" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584387305543" />
+    <state width="1322" height="205" key="GridCell.Tab.0.left" timestamp="1584547911164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1237" height="181" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584524183162" />
+    <state width="1322" height="205" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584547911164" />
+    <state width="1322" height="251" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584537391388" />
+    <state width="1877" height="420" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584387305543" />
+    <state width="1322" height="205" key="GridCell.Tab.0.right" timestamp="1584547911165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1237" height="181" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584524183163" />
+    <state width="1322" height="205" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584547911165" />
+    <state width="1322" height="251" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584537391389" />
+    <state width="1877" height="420" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584387305543" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583284521519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583284521519" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583284521519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583284521519" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583284521519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583284521519" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583284521519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583284521519" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582140145336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582140145335" />
+    <state x="558" y="181" key="Maven.ArtifactSearchDialog" timestamp="1584377622079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="181" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584377622079" />
+    <state x="284" y="0" key="SettingsEditor" timestamp="1584464902343">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="284" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584464902343" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583272565437" />
+    <state x="661" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1583172663007">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583172663007" />
+    <state x="411" y="157" width="672" height="443" key="run.anything.popup" timestamp="1584441456464">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="411" y="157" width="672" height="443" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1584441456464" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583284128236" />
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1584545312377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1584545312377" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583275005121" />
+  </component>
+</project>
