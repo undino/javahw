@@ -5,14 +5,12 @@ import org.hibernate.validator.constraints.Range;
 import org.itstep.enums.IsWarden;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import java.time.LocalDate;
 
+@Table
 @Entity
 @Data
 @AllArgsConstructor
@@ -37,15 +35,16 @@ public class Student {
 
     @NotBlank
     @NonNull
+    @Column(name = "groups", nullable = false, length = 50)
     private String group;
 
     @Past
     @NonNull
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    @Column(name = "berth_day")
     private LocalDate birthDate;
 
-    private IsWarden isWarden;
-
+    private IsWarden isWarden = IsWarden.NON;
 
     private double score;
 }

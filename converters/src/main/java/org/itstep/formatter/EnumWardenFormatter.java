@@ -11,7 +11,7 @@ import java.util.Locale;
 public class EnumWardenFormatter implements Formatter<IsWarden> {
 
     @Override
-    public IsWarden parse(String s, Locale locale) throws ParseException {
+    public IsWarden parse(String s, Locale locale) {
         log.info("in to Formatter, s = " + s);
             return IsWarden.IS_WARDEN;
     }
