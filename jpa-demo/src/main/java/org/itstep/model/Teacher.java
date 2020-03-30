@@ -1,9 +1,7 @@
 package org.itstep.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
@@ -15,6 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 //@RequiredArgsConstructor
+@ToString(exclude = {"groups"})
 public class Teacher {
 
     @Id
@@ -28,11 +27,12 @@ public class Teacher {
     private String lastName;
     @Column(name = "creer_start", nullable = false)
     private LocalDate careerStart;
+
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "teacher_group",
-            joinColumns = @JoinColumn(name = "teacher_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "group_id", referencedColumnName = "id")
-    )
+//    @JoinTable(name = "teacher_group",
+//            joinColumns = @JoinColumn(name = "teacher_id", referencedColumnName = "id"),
+//            inverseJoinColumns = @JoinColumn(name = "group_id", referencedColumnName = "id")
+//    )
     private Set<Group> groups;
 
 

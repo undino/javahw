@@ -33,8 +33,8 @@
                     </select>
                 </td>
                 <td>
-                    <a href="<spring:url value="/students/edit/${t.id}"/>">Update</a>
-                    <a href="<spring:url value="/students/delete/${t.id}"/>">Delete</a>
+                    <a href="<spring:url value="/teachers/edit/${t.id}"/>">Update</a>
+                    <a href="<spring:url value="/teachers/delete/${t.id}"/>">Delete</a>
                 </td>
             </tr>
         </c:forEach>

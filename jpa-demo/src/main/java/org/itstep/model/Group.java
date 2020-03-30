@@ -12,7 +12,8 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @RequiredArgsConstructor
-@ToString(exclude = "students")
+@AllArgsConstructor
+@ToString(exclude = {"students", "teachers"})
 public class Group {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +27,7 @@ public class Group {
     @OneToMany(mappedBy = "group", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Student> students;
 
-    @ManyToMany(mappedBy = "groups", cascade = CascadeType.ALL,  fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "groups", cascade = CascadeType.ALL)
     private Set<Teacher> teachers;
 
     @Override

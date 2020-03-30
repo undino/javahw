@@ -33,6 +33,7 @@ public class AcademyService {
         this.teacherRepository = teacherRepository;
     }
 
+    //STUDENT SERVICE
     @Transactional(readOnly = true)
     public List<Student> findStudents() {
         return studentRepository.findAll();
@@ -50,9 +51,25 @@ public class AcademyService {
         return studentRepository.findById(id).orElse(null);
     }
 
+    @Transactional(readOnly = true)
+    public StudentDto getStudentDto(int id) {
+        Student student = getStudent(id);
+        log.debug(student.toString());
+        return new StudentDto(student.getId(), student.getFirstName(), student.getLastName(), student.getBirthDate(),
+                student.getGroup().getId(), student.getGroup().getName());
+
+    }
+
+    public void save(StudentDto s) {
+        Group g = groupRepository.findById(s.getGroup()).orElse(null);
+        Student student = new Student(s.getFirstName(), s.getLastName(), s.getBirthDate(), g);
+        save(student);
+    }
+
     public Integer save(Student student) {
         return studentRepository.saveAndFlush(student).getId();
     }
+
 
     public void update(Student student) {
         studentRepository.save(student);
@@ -63,6 +80,14 @@ public class AcademyService {
         return true;
     }
 
+
+    public void update(StudentDto studentDto) {
+        save(new Student(studentDto.getId(), studentDto.getFirstName(), studentDto.getLastName(), studentDto.getBirthDate(),
+                getGroup(studentDto.getGroup())));
+    }
+
+
+    //GROUP SERVICE
     @Transactional(readOnly = true)
     public Group getGroup(Integer id) {
         return groupRepository.findById(id).orElse(null);
@@ -86,16 +111,6 @@ public class AcademyService {
         return true;
     }
 
-    public void save(StudentDto s) {
-        Group g = groupRepository.findById(s.getGroup()).orElse(null);
-        Student student = new Student(s.getFirstName(), s.getLastName(), s.getBirthDate(), g);
-        save(student);
-    }
-
-    public void update(StudentDto studentDto) {
-        save(new Student(studentDto.getId(), studentDto.getFirstName(), studentDto.getLastName(), studentDto.getBirthDate(),
-                getGroup(studentDto.getGroup())));
-    }
 
     public List<GroupDto> findGroupsDto() {
         return groupRepository.findAll()
@@ -103,14 +118,6 @@ public class AcademyService {
                 .collect(Collectors.toList());
     }
 
-    @Transactional(readOnly = true)
-    public StudentDto getStudentDto(int id) {
-        Student student = getStudent(id);
-        log.debug(student.toString());
-        return new StudentDto(student.getId(), student.getFirstName(), student.getLastName(), student.getBirthDate(),
-                student.getGroup().getId(), student.getGroup().getName());
-
-    }
 
     public GroupDto getGroupDto(int id) {
         Group group = getGroup(id);
@@ -127,31 +134,27 @@ public class AcademyService {
         save(new Group(groupDto.getName()));
     }
 
+
+    //TEACHER SERVICE
     public List<Teacher> getAllTeacher() {
         return teacherRepository.findAll();
     }
+
     @Transactional
     public List<TeacherDto> getAllTeacherDto() {
         return teacherRepository.findAll()
                 .stream()
-                .map(teasher -> new TeacherDto(
-                        teasher.getId(),
-                        teasher.getFirstName(),
-                        teasher.getLastName(),
-                        teasher.getCareerStart(),
-                        teasher.getGroups()
+                .map(teacher -> new TeacherDto(
+                        teacher.getId(),
+                        teacher.getFirstName(),
+                        teacher.getLastName(),
+                        teacher.getCareerStart(),
+                        teacher.getGroups()
                                 .stream()
                                 .map(Group::getName)
                                 .collect(Collectors.toList()))).collect(Collectors.toList());
     }
 
-    //    @Transactional(readOnly = true)
-//    public List<StudentDto> findStudentsDto() {
-//        return studentRepository.findAll().stream()
-//                .map(s -> new StudentDto(s.getId(), s.getFirstName(), s.getLastName(), s.getBirthDate(),
-//                        s.getGroup().getId(), s.getGroup().getName()))
-//                .collect(Collectors.toList());
-//    }
     @Transactional
     public Integer save(Teacher teacher) {
         return teacherRepository.save(teacher).getId();
@@ -159,7 +162,6 @@ public class AcademyService {
 
     @Transactional
     public void save(TeacherDto teacherDto) {
-        System.out.println(teacherDto);
         Set<Group> groupSet = new LinkedHashSet<>();
         for (Integer i : teacherDto.getGroupId()) {
             System.out.println("i = " + i);
@@ -168,11 +170,42 @@ public class AcademyService {
         save(new Teacher(teacherDto.getFirstName(), teacherDto.getLastName(), teacherDto.getCareerStart(), groupSet));
     }
 
+    @Transactional
+    public void deleteTeacher(int id) {
+        teacherRepository.deleteById(id);
+    }
 
-//    public void save(StudentDto s) {
-//        Group g = groupRepository.findById(s.getGroup()).orElse(null);
-//        Student student = new Student(s.getFirstName(), s.getLastName(), s.getBirthDate(), g);
-//        save(student);
-//    }
+    @Transactional
+    public Teacher getTeacher(int id) {
+        return teacherRepository.findById(id).orElse(null);
+    }
+
+    @Transactional
+    public TeacherDto getTeacherDto(int id) {
+        Teacher teacher = getTeacher(id);
+
+        return new TeacherDto(teacher.getId(),
+                teacher.getFirstName(),
+                teacher.getLastName(),
+                teacher.getCareerStart(),
+                new LinkedHashSet<>(teacher.getGroups()
+                        .stream()
+                        .map(Group::getId)
+                        .collect(Collectors.toList())));
+    }
+
+    @Transactional
+    public void updateTeacher(TeacherDto teacherDto) {
+        Set<Group> groupSet = new LinkedHashSet<>();
+
+        for (Integer i : teacherDto.getGroupId())
+            groupSet.add(getGroup(i));
+        teacherRepository.
+                save(new Teacher(teacherDto.getId(),
+                        teacherDto.getFirstName(),
+                        teacherDto.getLastName(),
+                        teacherDto.getCareerStart(),
+                        groupSet));
+    }
 
 }

@@ -1,7 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1712a88-10a3-4eaa-83b6-4e102bbef261" name="Default Changelist" comment="" />
+    <list default="true" id="f1712a88-10a3-4eaa-83b6-4e102bbef261" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/itstep/service/AcademyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/GroupDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Groups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/service/AcademyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/converters.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/51205737-da1b-4ddd-86d0-d280569e7bd6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/51205737-da1b-4ddd-86d0-d280569e7bd6/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T083012.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T083101.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084124.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084445.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084502.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084634.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085514.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085519.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085710.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085829.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T090928.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T090950.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091051.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091319.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091342.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091411.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091416.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070906.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070931.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070937.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070950.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082013.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082020.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082024.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082044.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082110.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082832.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082835.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082900.200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082907.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092416.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092426.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092451.200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093012.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093016.200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093025.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/spring-binding-data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/spring-binding-data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/converter/LocalDateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/StudentDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/enums/IsWarden.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/formatter/EnumWardenFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/formatter/LocalDateFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/studentConfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/config/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/view/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/test/java/org/itstep/data/ConversionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../converters/src/test/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw41_mv/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw41_mv/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw41_mv/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw41_mv/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw41_mv/hw41_mv.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw42_maven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw42_maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw42_maven/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw43/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw43/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw44/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw44/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw45/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/MYTEST.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/MYTEST.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/hw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/hw45.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw45/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw46/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw47/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw47/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw48/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw60_Session/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw60_Session/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw_53/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_53/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/dataSources/807def61-4a6e-4f37-8ea4-5b3a34381879.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/dataSources/807def61-4a6e-4f37-8ea4-5b3a34381879.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javahw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/GroupDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/GroupDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/StudentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/TeacherDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/TeacherDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/service/AcademyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/itstep/data/JpaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/itstep/data/JpaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-binding-data/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-binding-data/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/dao/DbUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/dao/DbUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/StartFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/StartFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/BlogServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/BlogServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/blog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/blog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/adminPanel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/adminPanel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/afterStatic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/afterStatic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/beforeStatic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/beforeStatic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/navigation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/navigation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/userPanel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/userPanel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap-listener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-listener/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-bootstrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-todo/web-todo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webhw52/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webhw52/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +185,22 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZaZBeIY3I541A5GHEvJ8tEn0rl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,7 +211,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ttet/jpa-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -36,9 +222,53 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.itstep.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.itstep.model" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AcademyServiceTest">
+    <configuration name="AcademyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.service" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.service.AcademyServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.JpaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AcademyServiceTest" />
+        <item itemvalue="JUnit.JpaTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,7 +281,12 @@
       <option name="presentableId" value="Default" />
       <updated>1585079031087</updated>
       <workItem from="1585079112645" duration="12621000" />
-      <workItem from="1585130890292" duration="17805000" />
+      <workItem from="1585130890292" duration="38291000" />
+      <workItem from="1585256724732" duration="798000" />
+      <workItem from="1585262580878" duration="614000" />
+      <workItem from="1585314608209" duration="468000" />
+      <workItem from="1585570517755" duration="27000" />
+      <workItem from="1585570653511" duration="2751000" />
     </task>
     <servers />
   </component>
@@ -67,25 +302,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585148393100" />
-    <state width="1322" height="184" key="GridCell.Tab.0.bottom" timestamp="1585152457397">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585570751973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585152457397" />
-    <state width="1322" height="184" key="GridCell.Tab.0.center" timestamp="1585152457396">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585570751973" />
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1585573428820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585152457396" />
-    <state width="1322" height="184" key="GridCell.Tab.0.left" timestamp="1585152457396">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428820" />
+    <state width="1322" height="137" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585252546761" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1585573428819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585152457396" />
-    <state width="1322" height="184" key="GridCell.Tab.0.right" timestamp="1585152457396">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428819" />
+    <state width="1322" height="137" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585252546760" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1585573428818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585152457396" />
-    <state x="65" y="58" key="new project wizard" timestamp="1585082047991">
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428818" />
+    <state width="1322" height="137" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585252546760" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1585573428819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="58" key="new project wizard/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585082047991" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428819" />
+    <state width="1322" height="137" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585252546761" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585570651931">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585570651931" />
+    <state x="447" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585571052768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585571052768" />
+    <state x="65" y="58" key="new project wizard" timestamp="1585256925545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="58" key="new project wizard/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585256925545" />
   </component>
 </project>

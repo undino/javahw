@@ -6,10 +6,9 @@ import org.itstep.service.AcademyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -43,8 +42,29 @@ public class TeacherController {
     }
 
     @PostMapping(value = "/create")
-    public String create(TeacherDto teacherDto){
+    public String create(TeacherDto teacherDto) {
         academyService.save(teacherDto);
+        return "redirect:/teachers";
+    }
+
+    @GetMapping(value = "/delete/{id}")
+    public String delete(@PathVariable int id) {
+        academyService.deleteTeacher(id);
+        return "redirect:/teachers";
+    }
+
+    @GetMapping(value = "/edit/{id}")
+    public String edit(@PathVariable int id, Model model) {
+        model.addAttribute("teacherDto", academyService.getTeacherDto(id));
+        return "teacher/form";
+    }
+
+    @PostMapping(value = "/edit/{id}")
+    public String edit(@PathVariable int id, @Validated @ModelAttribute TeacherDto teacherDto, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "teacher/form";
+        }
+        academyService.updateTeacher(teacherDto);
         return "redirect:/teachers";
     }
 }
