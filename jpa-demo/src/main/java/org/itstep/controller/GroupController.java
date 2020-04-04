@@ -6,6 +6,10 @@ import org.itstep.model.Group;
 import org.itstep.service.AcademyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -31,10 +35,28 @@ public class GroupController {
         this.academyService = academyService;
     }
 
-    @GetMapping
-    public String index(Model model) {
+    @GetMapping()
+    public String index(Model model,
+                        @RequestParam(defaultValue = "1") Integer page,
+                        @RequestParam(defaultValue = "5") Integer size,
+                        @RequestParam(defaultValue = "\\*") String criteria) {
+
         log.info("index()");
-        model.addAttribute("groups", academyService.findGroupsDto());
+        log.info("query: page = " + page + " size = " + size + " count groups " + academyService.countGroups() + " MATH = " + (int) Math.ceil((double) academyService.countGroups() / (double) 6));
+        model.addAttribute("countPage", Math.ceil((double) academyService.countGroups() /(double) size));
+        model.addAttribute("groups", academyService.findGroupsDto(page - 1, size));
+        return INDEX_PATH;
+    }
+
+    @GetMapping(params = "/search")
+    public String search(Model model,
+                        @RequestParam(defaultValue = "1") Integer page,
+                        @RequestParam(defaultValue = "5") Integer size) {
+
+        log.info("index()");
+        log.info("query: page = " + page + " size = " + size + " count groups " + academyService.countGroups() + " MATH = " + (int) Math.ceil((double) academyService.countGroups() / (double) 6));
+        model.addAttribute("countPage", Math.ceil((double) academyService.countGroups() /(double) size));
+        model.addAttribute("groups", academyService.findGroupsDto(page - 1, size));
         return INDEX_PATH;
     }
 

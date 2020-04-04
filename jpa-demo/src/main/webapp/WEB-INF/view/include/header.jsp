@@ -44,9 +44,10 @@
         <li><a href="<spring:url value="/groups"/>"><i class="material-icons">group</i>List</a></li>
         <li><a href="<spring:url value="/groups/create"/>"><i class="material-icons">group_add</i>Add</a></li>
     </ul>
+
     <ul id="dropdown-teachers" class="dropdown-content">
-        <li><a href="<spring:url value="/teachers"/>"><i class="material-icons">teacher</i>List</a></li>
-        <li><a href="<spring:url value="/teachers/create"/>"><i class="material-icons">teacher_add</i>Add</a></li>
+        <li><a href="<spring:url value="/teachers"/>"><i class="material-icons">group</i>List</a></li>
+        <li><a href="<spring:url value="/teachers/create"/>"><i class="material-icons">person_add</i>Add</a></li>
     </ul>
 
 </nav>

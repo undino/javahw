@@ -20,7 +20,7 @@
                     <form:errors path="name" class="helper-text" data-error="wrong" data-success="right"/>
                 </div>
                 <div class="input-field col s6">
-                    <input type="submit" class="btn"/>
+                    <button type="submit" class="btn">Save<i class="material-icons right">send</i></button>
                 </div>
             </div>
         </form:form>

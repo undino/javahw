@@ -11,10 +11,16 @@ import org.itstep.repository.GroupRepository;
 import org.itstep.repository.StudentRepository;
 import org.itstep.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -33,17 +39,29 @@ public class AcademyService {
         this.teacherRepository = teacherRepository;
     }
 
-    //STUDENT SERVICE
     @Transactional(readOnly = true)
     public List<Student> findStudents() {
         return studentRepository.findAll();
     }
 
     @Transactional(readOnly = true)
-    public List<StudentDto> findStudentsDto() {
-        return studentRepository.findAll().stream()
-                .map(s -> new StudentDto(s.getId(), s.getFirstName(), s.getLastName(), s.getBirthDate(), s.getGroup().getId(), s.getGroup().getName()))
+    public List<StudentDto> findStudentsDto(int pageNumber, int size) {
+        Page<Student> page = studentRepository.findAll(PageRequest.of(pageNumber, size));
+        return page.getContent()
+                .stream()
+                .map(s -> new StudentDto(
+                        s.getId(),
+                        s.getFirstName(),
+                        s.getLastName(),
+                        s.getBirthDate(),
+                        s.getGroup().getId(),
+                        s.getGroup().getName()))
                 .collect(Collectors.toList());
+
+//        studentRepository.findAll().stream();
+//                .map(s -> new StudentDto(s.getId(), s.getFirstName(), s.getLastName(), s.getBirthDate(),
+//                        s.getGroup().getId(), s.getGroup().getName()))
+//                .collect(Collectors.toList());
     }
 
     @Transactional(readOnly = true)
@@ -51,25 +69,9 @@ public class AcademyService {
         return studentRepository.findById(id).orElse(null);
     }
 
-    @Transactional(readOnly = true)
-    public StudentDto getStudentDto(int id) {
-        Student student = getStudent(id);
-        log.debug(student.toString());
-        return new StudentDto(student.getId(), student.getFirstName(), student.getLastName(), student.getBirthDate(),
-                student.getGroup().getId(), student.getGroup().getName());
-
-    }
-
-    public void save(StudentDto s) {
-        Group g = groupRepository.findById(s.getGroup()).orElse(null);
-        Student student = new Student(s.getFirstName(), s.getLastName(), s.getBirthDate(), g);
-        save(student);
-    }
-
     public Integer save(Student student) {
         return studentRepository.saveAndFlush(student).getId();
     }
-
 
     public void update(Student student) {
         studentRepository.save(student);
@@ -80,14 +82,6 @@ public class AcademyService {
         return true;
     }
 
-
-    public void update(StudentDto studentDto) {
-        save(new Student(studentDto.getId(), studentDto.getFirstName(), studentDto.getLastName(), studentDto.getBirthDate(),
-                getGroup(studentDto.getGroup())));
-    }
-
-
-    //GROUP SERVICE
     @Transactional(readOnly = true)
     public Group getGroup(Integer id) {
         return groupRepository.findById(id).orElse(null);
@@ -102,6 +96,12 @@ public class AcademyService {
         return groupRepository.saveAndFlush(group).getId();
     }
 
+    public void saveAll(List<Group> groups) {
+        for (Group g : groups) {
+            save(g);
+        }
+    }
+
     public void update(Group group) {
         groupRepository.save(group);
     }
@@ -111,13 +111,47 @@ public class AcademyService {
         return true;
     }
 
-
-    public List<GroupDto> findGroupsDto() {
-        return groupRepository.findAll()
-                .stream().map(g -> new GroupDto(g.getId(), g.getName()))
-                .collect(Collectors.toList());
+    public void save(StudentDto s) {
+        Group g = groupRepository.findById(s.getGroupId()).orElse(null);
+        Student student = new Student(s.getFirstName(), s.getLastName(), s.getBirthDate(), g);
+        save(student);
     }
 
+    public void update(StudentDto studentDto) {
+        save(new Student(studentDto.getId(), studentDto.getFirstName(), studentDto.getLastName(), studentDto.getBirthDate(),
+                getGroup(studentDto.getGroupId())));
+    }
+
+    public List<GroupDto> findGroupsDto(int pageNumber, int size) {
+        Page<Group> page = groupRepository.findAll(PageRequest.of(pageNumber, size));
+//        Pageable pageable = page.nextPageable();
+
+
+//        log.warn("page.getTotalPages() = " + page.getTotalPages());
+//        log.warn("page.getSize() = " + page.getSize());
+//        log.warn("page.hasNext() = " + page.hasNext());
+//        log.warn("page.isLast() = " + page.isLast());
+//        log.warn("page.getNumber() = " + page.getNumber());
+//        log.warn("page.getNumberOfElements() = " + page.getNumberOfElements());
+//        log.warn("page.getPageable()= " + page.getPageable());
+
+
+        return page.getContent().stream().map(g -> new GroupDto(g.getId(), g.getName()))
+                .collect(Collectors.toList());
+
+//        return groupRepository.findAll((Pageable) page)
+//                .stream().map(g -> new GroupDto(g.getId(), g.getName()))
+//                .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public StudentDto getStudentDto(int id) {
+        Student student = getStudent(id);
+        log.debug(student.toString());
+        return new StudentDto(student.getId(), student.getFirstName(), student.getLastName(), student.getBirthDate(),
+                student.getGroup().getId(), student.getGroup().getName());
+
+    }
 
     public GroupDto getGroupDto(int id) {
         Group group = getGroup(id);
@@ -135,44 +169,21 @@ public class AcademyService {
     }
 
 
-    //TEACHER SERVICE
-    public List<Teacher> getAllTeacher() {
-        return teacherRepository.findAll();
-    }
-
-    @Transactional
-    public List<TeacherDto> getAllTeacherDto() {
-        return teacherRepository.findAll()
-                .stream()
-                .map(teacher -> new TeacherDto(
-                        teacher.getId(),
-                        teacher.getFirstName(),
-                        teacher.getLastName(),
-                        teacher.getCareerStart(),
-                        teacher.getGroups()
-                                .stream()
-                                .map(Group::getName)
-                                .collect(Collectors.toList()))).collect(Collectors.toList());
-    }
-
-    @Transactional
+    //TEACHER
     public Integer save(Teacher teacher) {
-        return teacherRepository.save(teacher).getId();
+        return teacherRepository.saveAndFlush(teacher).getId();
     }
 
-    @Transactional
     public void save(TeacherDto teacherDto) {
-        Set<Group> groupSet = new LinkedHashSet<>();
-        for (Integer i : teacherDto.getGroupId()) {
-            System.out.println("i = " + i);
-            groupSet.add(getGroup(i));
-        }
-        save(new Teacher(teacherDto.getFirstName(), teacherDto.getLastName(), teacherDto.getCareerStart(), groupSet));
-    }
+        List<Group> groups = new ArrayList<>();
 
-    @Transactional
-    public void deleteTeacher(int id) {
-        teacherRepository.deleteById(id);
+        for (Integer i : teacherDto.getGroupsId()) {
+            System.out.println("i = " + i);
+            groups.add(getGroup(i));
+        }
+
+        save(new Teacher(teacherDto.getId(), teacherDto.getFirstName(), teacherDto.getLastName(), groups));
+
     }
 
     @Transactional
@@ -180,32 +191,65 @@ public class AcademyService {
         return teacherRepository.findById(id).orElse(null);
     }
 
-    @Transactional
-    public TeacherDto getTeacherDto(int id) {
-        Teacher teacher = getTeacher(id);
 
-        return new TeacherDto(teacher.getId(),
-                teacher.getFirstName(),
-                teacher.getLastName(),
-                teacher.getCareerStart(),
-                new LinkedHashSet<>(teacher.getGroups()
-                        .stream()
-                        .map(Group::getId)
-                        .collect(Collectors.toList())));
+    public boolean deleteTeacher(int id) {
+        teacherRepository.deleteById(id);
+        return true;
     }
 
-    @Transactional
-    public void updateTeacher(TeacherDto teacherDto) {
-        Set<Group> groupSet = new LinkedHashSet<>();
+    public TeacherDto getTeacherDto(int id) {
+        Teacher t = getTeacher(id);
+        return new TeacherDto(t.getId(),
+                t.getFirstName(),
+                t.getLastName(),
+                t.getGroups()
+                        .stream()
+                        .map(Group::getId)
+                        .collect(Collectors.toSet()));
+    }
 
-        for (Integer i : teacherDto.getGroupId())
+    public void update(TeacherDto teacherDto) {
+        List<Group> groupSet = new ArrayList<>();
+
+        for (Integer i : teacherDto.getGroupsId())
             groupSet.add(getGroup(i));
         teacherRepository.
                 save(new Teacher(teacherDto.getId(),
                         teacherDto.getFirstName(),
                         teacherDto.getLastName(),
-                        teacherDto.getCareerStart(),
                         groupSet));
+
     }
 
+    public List<TeacherDto> findAllTeachers(int pageNumber, int size) {
+        Page<Teacher> teacherPage = teacherRepository.findAll(PageRequest.of(pageNumber, size));
+        return teacherPage.getContent()
+                .stream()
+                .map(t -> new TeacherDto(
+                        t.getId(),
+                        t.getFirstName(),
+                        t.getLastName(),
+                        t.getGroups()
+                                .stream()
+                                .map(Group::getName)
+                                .collect(Collectors.toList())))
+                .collect(Collectors.toList());
+
+    }
+
+    public long countGroups() {
+        return groupRepository.count();
+    }
+
+    public long countStudents() {
+        return studentRepository.count();
+    }
+
+    public long countTeacher() {
+        return teacherRepository.count();
+    }
+
+    public List<Group> searchGroups(String text){
+        return groupRepository.findAllByNameContainsIgnoreCase(text);
+    }
 }

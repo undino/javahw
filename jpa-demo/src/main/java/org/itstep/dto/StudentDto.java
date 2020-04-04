@@ -2,6 +2,7 @@ package org.itstep.dto;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -31,7 +32,7 @@ public class StudentDto {
 
     @NotNull
     @NonNull
-    private Integer group;
+    private Integer groupId;
 
     private String groupName;
 }

@@ -32,13 +32,16 @@ public class StudentsController {
 
     @ModelAttribute("groups")
     List<GroupDto> getGroups() {
-        return academyService.findGroupsDto();
+        return academyService.findGroupsDto(0, (int) academyService.countGroups());
     }
 
     @GetMapping
-    public String index(Model model) {
+    public String index(Model model,
+                        @RequestParam(defaultValue = "1") int page,
+                        @RequestParam(defaultValue = "5") int size) {
         log.info("index()");
-        model.addAttribute("students", academyService.findStudentsDto());
+        model.addAttribute("studentPage", Math.ceil((double) academyService.countStudents() / (double) size));
+        model.addAttribute("students", academyService.findStudentsDto(page - 1, size));
         return "student/index";
     }
 

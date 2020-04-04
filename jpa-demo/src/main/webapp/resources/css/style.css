@@ -27,3 +27,7 @@ h1 {
     margin-top: 50px;
     float:right;
 }
+
+label  {
+    width: 100%;
+}

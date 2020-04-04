@@ -1,49 +1,47 @@
 package org.itstep.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.*;
+import org.hibernate.validator.constraints.Length;
+
+import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
 
-
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class TeacherDto {
-
     private Integer id;
-    @NotBlank
-    @NotNull
-    private String firstName;
-    @NotNull
-    private String lastName;
-    @NotNull
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    private LocalDate careerStart;
 
-    private Set<Integer> groupId;
+    @NonNull
+    @NotBlank
+    @Length(max = 50)
+    private String firstName;
+
+    @NonNull
+    @NotBlank
+    @Length(max = 50)
+    private String lastName;
+
+    private Set<Integer> groupsId;
 
     private List<String> groupsName;
 
-    public TeacherDto(Integer id, String firstName, String lastName, LocalDate careerStart, List<String> groupsName) {
+    public TeacherDto(Integer id, String firstName, String lastName, List<String> groupsName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.careerStart = careerStart;
         this.groupsName = groupsName;
     }
 
-    public TeacherDto(Integer id, String firstName, String lastName, LocalDate careerStart, Set<Integer> groupId) {
+    public TeacherDto(Integer id, String firstName, String lastName, Set<Integer> groupsId) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.careerStart = careerStart;
-        this.groupId = groupId;
+        this.groupsId = groupsId;
     }
+
 
 }

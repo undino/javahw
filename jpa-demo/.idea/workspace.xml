@@ -1,196 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1712a88-10a3-4eaa-83b6-4e102bbef261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/itstep/service/AcademyServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/GroupDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Groups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/java/org/itstep/service/AcademyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-jdbc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters-second/src/main/webapp/WEB-INF/config/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/converters.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/51205737-da1b-4ddd-86d0-d280569e7bd6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/51205737-da1b-4ddd-86d0-d280569e7bd6/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/dataSources/9ef3d871-2611-4df3-8674-7fcdf50a2985/storage_v2/_src_/database/DATASOURCE.RVxdnw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T083012.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T083101.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084124.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084445.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084502.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T084634.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085514.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085519.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085710.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T085829.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T090928.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T090950.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091051.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091319.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091342.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091411.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-24T091416.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070906.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070931.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070937.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T070950.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082013.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082020.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082024.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082044.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082110.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082832.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082835.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082900.200.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T082907.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092416.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092426.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T092451.200.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093012.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093016.200.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/2020-02-26T093025.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/http-client.cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/spring-binding-data.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../converters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/spring-binding-data.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/converter/LocalDateConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/StudentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/data/StudentDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/enums/IsWarden.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/formatter/EnumWardenFormatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/formatter/LocalDateFormatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/resources/studentConfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/config/spring-jdbc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/config/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/view/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/main/webapp/resources/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/test/java/org/itstep/data/ConversionDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../converters/src/test/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw38/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw39/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw41_mv/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw41_mv/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw41_mv/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw41_mv/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw41_mv/hw41_mv.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw42_maven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw42_maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw42_maven/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hw42_maven/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw43/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw43/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw44/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw44/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw45/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/MYTEST.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/MYTEST.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/hw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/hw45.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw45/tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw47/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw47/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw48/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw60_Session/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw60_Session/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw_53/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_53/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/dataSources/807def61-4a6e-4f37-8ea4-5b3a34381879.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/dataSources/807def61-4a6e-4f37-8ea4-5b3a34381879.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw_54/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javahw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/GroupDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/GroupDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/StudentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/dto/TeacherDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/dto/TeacherDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/service/AcademyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/service/AcademyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/itstep/data/JpaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/itstep/data/JpaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-binding-data/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-binding-data/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/dataSources/3873e46f-42b5-4722-ad4a-30ff58af6235.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../staticresources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../staticresources/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/dao/DbUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/dao/DbUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/StartFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/filters/StartFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/BlogServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/BlogServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/java/org/itstep/servlets/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/blog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/blog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/adminPanel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/adminPanel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/afterStatic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/afterStatic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/beforeStatic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/beforeStatic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/navigation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/navigation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/posts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/userPanel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/pageFragments/userPanel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-filters/src/main/webapp/WEB-INF/home/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap-listener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap-listener/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-bootstrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-bootstrap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-todo/web-todo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webhw52/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webhw52/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="academy@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="spring-beans.schema" />
+        <option value="HTTP Request" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Maxim &lt;maxshaptala@gmail.com&gt;" />
+        <option value="maxshaptala@gmail.com" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="demo_orm" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\Desktop\converters\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -199,7 +68,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1ZaZBeIY3I541A5GHEvJ8tEn0rl" />
+  <component name="ProjectId" id="1XiXT4XHiTbEkH4rvk2blnZaCqt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -207,49 +76,197 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;h2" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ttet/jpa-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Git projects/jpa-demo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.itstep.service" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.itstep.dto" />
       <recent name="org.itstep.model" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Desktop\jpa-demo\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\Desktop\converters\src\test\resources" />
+      <recent name="E:\Desktop\converters\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\Desktop\spring-binding-data\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\Desktop\spring-binding-data\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.itstep.controller" />
+      <recent name="org.itstep.dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Desktop\converters\src\main\webapp\WEB-INF\view\student" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.AcademyServiceTest">
-    <configuration name="AcademyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.itstep.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.itstep.service" />
-      <option name="MAIN_CLASS_NAME" value="org.itstep.service.AcademyServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JpaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-demo" />
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;firstName&quot;: &quot;Паша&quot;,&#10;  &quot;lastName&quot;: &quot;Вишнев&quot;,&#10;  &quot;age&quot;: 35,&#10;  &quot;group&quot;: &quot;ЕКО 20-П-3&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{  &#10;  &quot;firstName&quot;: &quot;Паша&quot;,&#10;  &quot;lastName&quot;: &quot;Вишнев&quot;,&#10;  &quot;age&quot;: 35,&#10;  &quot;group&quot;: &quot;ЕКО 20-П-3&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/spring-binding-data/api/students/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/students/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RepositoryTest">
+    <configuration name="RepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.itstep.data.*" />
@@ -257,86 +274,412 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.itstep.data" />
-      <option name="MAIN_CLASS_NAME" value="org.itstep.data.JpaTest" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.RepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepositoryTest.getAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.RepositoryTest" />
+      <option name="METHOD_NAME" value="getAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.getPaging" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.RepositoryTest" />
+      <option name="METHOD_NAME" value="getPaging" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.getUsingExtendsMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.RepositoryTest" />
+      <option name="METHOD_NAME" value="getUsingExtendsMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.getUsingQueryAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstep.data" />
+      <option name="MAIN_CLASS_NAME" value="org.itstep.data.RepositoryTest" />
+      <option name="METHOD_NAME" value="getUsingQueryAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-demo [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RepositoryTest.getAllTest" />
+      <item itemvalue="JUnit.RepositoryTest.getUsingExtendsMethods" />
+      <item itemvalue="JUnit.RepositoryTest.getUsingQueryAnnotation" />
+      <item itemvalue="JUnit.RepositoryTest" />
+      <item itemvalue="JUnit.RepositoryTest.getPaging" />
+      <item itemvalue="Maven.spring-demo [jetty:run]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AcademyServiceTest" />
-        <item itemvalue="JUnit.JpaTest" />
+        <item itemvalue="JUnit.RepositoryTest" />
+        <item itemvalue="JUnit.RepositoryTest.getAllTest" />
+        <item itemvalue="JUnit.RepositoryTest.getPaging" />
+        <item itemvalue="JUnit.RepositoryTest.getUsingQueryAnnotation" />
+        <item itemvalue="JUnit.RepositoryTest.getUsingExtendsMethods" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1712a88-10a3-4eaa-83b6-4e102bbef261" name="Default Changelist" comment="" />
-      <created>1585079031087</created>
+      <changelist id="d222a6d9-1d12-4225-ab47-b86978dee438" name="Default Changelist" comment="" />
+      <created>1581529892120</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585079031087</updated>
-      <workItem from="1585079112645" duration="12621000" />
-      <workItem from="1585130890292" duration="38291000" />
-      <workItem from="1585256724732" duration="798000" />
-      <workItem from="1585262580878" duration="614000" />
-      <workItem from="1585314608209" duration="468000" />
-      <workItem from="1585570517755" duration="27000" />
-      <workItem from="1585570653511" duration="2751000" />
+      <updated>1581529892120</updated>
+      <workItem from="1581529894450" duration="6320000" />
+      <workItem from="1581957701574" duration="9310000" />
+      <workItem from="1582130243768" duration="9429000" />
+      <workItem from="1582562112817" duration="7732000" />
+      <workItem from="1582572964394" duration="367000" />
+      <workItem from="1582735121593" duration="9208000" />
+      <workItem from="1583168750742" duration="634000" />
+      <workItem from="1583172661306" duration="4122000" />
+      <workItem from="1583269926989" duration="1173000" />
+      <workItem from="1583272593429" duration="11893000" />
+      <workItem from="1584372452732" duration="12155000" />
+      <workItem from="1584548328165" duration="24032000" />
+      <workItem from="1584974262271" duration="6693000" />
+      <workItem from="1584996935381" duration="7531000" />
+      <workItem from="1585004579461" duration="71000" />
+      <workItem from="1585004714297" duration="857000" />
+      <workItem from="1585052564144" duration="600000" />
+      <workItem from="1585129361917" duration="42000" />
+      <workItem from="1585130555232" duration="4287000" />
+      <workItem from="1585147178744" duration="23738000" />
+      <workItem from="1585581927243" duration="15741000" />
+      <workItem from="1585688036097" duration="19917000" />
+      <workItem from="1585766289543" duration="11369000" />
+      <workItem from="1585959514603" duration="112000" />
+      <workItem from="1585959715306" duration="125000" />
     </task>
+    <task id="LOCAL-00001" summary="Init project">
+      <created>1584560872442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584560872442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Выполнен рефакторинг кода, добавлена заготовка для демонстрации множественных связей между сущностями">
+      <created>1584567610498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584567610498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Выполнен рефакторинг кода, добавлена заготовка для демонстрации множественных связей между сущностями">
+      <created>1584572750360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584572750360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлен репозиторий, сущность Group">
+      <created>1585005503729</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585005503729</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавлен тест и репозитории группы и студентов">
+      <created>1585132160932</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585132160932</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавлен тест для демонстрации юнит тестов,&#10; добавлена сущность преподаватель, репозитеорий и контроллер.">
+      <created>1585172644290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585172644290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init project" />
+    <MESSAGE value="Выполнен рефакторинг кода, добавлена заготовка для демонстрации множественных связей между сущностями" />
+    <MESSAGE value="Добавлен репозиторий, сущность Group" />
+    <MESSAGE value="Добавлен тест и репозитории группы и студентов" />
+    <MESSAGE value="Добавлен тест для демонстрации юнит тестов,&#10; добавлена сущность преподаватель, репозитеорий и контроллер." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен тест для демонстрации юнит тестов,&#10; добавлена сущность преподаватель, репозитеорий и контроллер." />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="21" key="#Assign_Data_Sources" timestamp="1585084052368">
+    <state x="275" y="23" width="813" height="683" key="#Project_Structure" timestamp="1585688240683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#Assign_Data_Sources/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585084052368" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1585148393100">
+    <state x="275" y="23" width="813" height="683" key="#Project_Structure/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585688240683" />
+    <state x="552" y="179" key="#SQL_Dialects" timestamp="1581961760088">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1581961760087" />
+    <state x="557" y="170" key="#TeacherRepoTest.updateTeacher" timestamp="1585152093822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="170" key="#TeacherRepoTest.updateTeacher/0.0.1920.1040@0.0.1920.1040" timestamp="1585152093822" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583270381338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583270381338" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583176100792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583176100792" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1585163673338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585163673338" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585688095199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585148393100" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1585570751973">
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585688095199" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585146893319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585146893319" />
+    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583272735661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583272735661" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585153382806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585153382806" />
+    <state x="585" y="116" key="CommitChangelistDialog2" timestamp="1585172641694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585172641694" />
+    <state width="461" height="466" key="DebuggerActiveHint" timestamp="1585599772738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1585599772738" />
+    <state x="526" y="173" key="FileChooserDialogImpl" timestamp="1585959846408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585570751973" />
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1585573428820">
+    <state x="526" y="173" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585959846408" />
+    <state x="740" y="247" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585172663275" />
+    <state width="1322" height="155" key="GridCell.Tab.0.bottom" timestamp="1585778750402">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428820" />
-    <state width="1322" height="137" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585252546761" />
-    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1585573428819">
+    <state width="1322" height="155" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585778750402" />
+    <state width="1877" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585600853117" />
+    <state width="1322" height="155" key="GridCell.Tab.0.center" timestamp="1585778750401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428819" />
-    <state width="1322" height="137" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585252546760" />
-    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1585573428818">
+    <state width="1322" height="155" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585778750401" />
+    <state width="1877" height="420" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585600853117" />
+    <state width="1322" height="155" key="GridCell.Tab.0.left" timestamp="1585778750401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428818" />
-    <state width="1322" height="137" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585252546760" />
-    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1585573428819">
+    <state width="1322" height="155" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585778750401" />
+    <state width="1877" height="420" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585600853117" />
+    <state width="1322" height="155" key="GridCell.Tab.0.right" timestamp="1585778750401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585573428819" />
-    <state width="1322" height="137" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585252546761" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1585570651931">
+    <state width="1322" height="155" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585778750401" />
+    <state width="1877" height="420" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585600853117" />
+    <state width="1877" height="172" key="GridCell.Tab.1.bottom" timestamp="1585599795627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="172" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585599795627" />
+    <state width="1877" height="172" key="GridCell.Tab.1.center" timestamp="1585599795627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="172" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585599795627" />
+    <state width="1877" height="172" key="GridCell.Tab.1.left" timestamp="1585599795627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="172" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585599795627" />
+    <state width="1877" height="172" key="GridCell.Tab.1.right" timestamp="1585599795627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="172" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585599795627" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582140145336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582140145335" />
+    <state x="558" y="181" key="Maven.ArtifactSearchDialog" timestamp="1585594894837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="181" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585594894837" />
+    <state x="749" y="231" key="RollbackChangesDialog" timestamp="1584560767032">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="749" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584560767032" />
+    <state x="440" y="95" key="SettingsEditor" timestamp="1583272565437">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583272565437" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585172646891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585172646891" />
+    <state x="470" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1585959517864">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585570651931" />
-    <state x="447" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585571052768">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="470" y="239" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585959517864" />
+    <state x="661" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583172663007" />
+    <state x="702" y="139" key="refactoring.ChangeSignatureDialog" timestamp="1584979386267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="447" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585571052768" />
-    <state x="65" y="58" key="new project wizard" timestamp="1585256925545">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="702" y="139" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584979386267" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1585150296693">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="65" y="58" key="new project wizard/0.0.1366.728/1366.0.1280.1024@0.0.1366.728" timestamp="1585256925545" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585150296693" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584557063830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584557063830" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/itstep/data/JpaDemo.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jpa_demo$TeacherRepoTest_updateTeacher.ic" NAME="TeacherRepoTest.updateTeacher Coverage Results" MODIFIED="1585152066145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.itstep.data.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,45 +1,35 @@
 package org.itstep.model;
 
 import lombok.*;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import java.time.LocalDate;
-import java.util.Set;
+import java.util.List;
 
 @Table(name = "teacher")
 @Entity
 @Data
 @AllArgsConstructor
+@RequiredArgsConstructor
 @NoArgsConstructor
-//@RequiredArgsConstructor
-@ToString(exclude = {"groups"})
 public class Teacher {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private  Integer id;
+
+    @NonNull
     @NotBlank
-    @Column(name = "first_name", nullable = false)
+    @Length(max = 50)
+    @Column(name = "first_name")
     private String firstName;
+
+    @NonNull
     @NotBlank
-    @Column(name = "last_name", nullable = false)
+    @Length(max = 50)
+    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "creer_start", nullable = false)
-    private LocalDate careerStart;
 
     @ManyToMany(fetch = FetchType.EAGER)
-//    @JoinTable(name = "teacher_group",
-//            joinColumns = @JoinColumn(name = "teacher_id", referencedColumnName = "id"),
-//            inverseJoinColumns = @JoinColumn(name = "group_id", referencedColumnName = "id")
-//    )
-    private Set<Group> groups;
-
-
-    public Teacher(String firstName, String lastName, LocalDate careerStart, Set<Group> groupSet) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.careerStart = careerStart;
-        this.groups = groupSet;
-    }
+    List<Group> groups;
 }

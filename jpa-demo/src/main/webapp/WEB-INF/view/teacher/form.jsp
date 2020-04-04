@@ -3,7 +3,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
-<c:set var="title" value="Create Teacher"/>
+<c:set var="title" value="Create Teachers"/>
 <%@include file="../include/header.jsp" %>
 
 <div class="container">
@@ -16,33 +16,28 @@
             <div class="row">
                 <div class="input-field col s6">
                     <form:input path="firstName" required="required" class="validate"/>
-                    <form:label path="firstName">First Name</form:label>
+                    <form:label path="firstName">First name</form:label>
                     <form:errors path="firstName" class="helper-text" data-error="wrong" data-success="right"/>
                 </div>
                 <div class="input-field col s6">
                     <form:input path="lastName" required="required" class="validate"/>
-                    <form:label path="lastName">Last Name</form:label>
+                    <form:label path="lastName">Last name</form:label>
                     <form:errors path="lastName" class="helper-text" data-error="wrong" data-success="right"/>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6">
-                    <form:select path="groupId" cssClass="validate">
-                        <form:options items="${groups}" itemLabel="name" itemValue="id"/>
-                    </form:select>
-                    <form:label path="groupId">Group</form:label>
-                    <form:errors path="groupId" class="error-text helper-text" data-error="wrong" data-success="right"/>
-                </div>
-                <div class="input-field col s6">
-                    <form:input path="careerStart" required="required" type="text" class="validate datepicker"/>
-                    <form:label path="careerStart">Start career</form:label>
-                    <form:errors path="careerStart" class="error-text helper-text" data-error="wrong"
-                                 data-success="right"/>
+                    <select multiple="multiple" name="groupsId" id="groupsId">
+                        <c:forEach items="${groupsDto}" var="g">
+                            <option value="${g.id}">${g.name}</option>
+                        </c:forEach>
+                    </select>
+                    <label for="groupsId">Select groups</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6">
-                    <input type="submit" class="btn"/>
+                    <button type="submit" class="btn">Save<i class="material-icons right">send</i></button>
                 </div>
             </div>
         </form:form>

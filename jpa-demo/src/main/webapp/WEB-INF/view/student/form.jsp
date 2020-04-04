@@ -27,11 +27,12 @@
             </div>
             <div class="row">
                 <div class="input-field col s6">
-                    <form:select path="group" cssClass="validate">
+                    <form:select path="groupId" cssClass="validate">
+                        <form:option value="" disabled="true" selected="true">Choose your option</form:option>
                         <form:options items="${groups}" itemLabel="name" itemValue="id"/>
                     </form:select>
-                    <form:label path="group">Group</form:label>
-                    <form:errors path="group" class="error-text helper-text" data-error="wrong" data-success="right"/>
+                    <form:label path="groupId">Group</form:label>
+                    <form:errors path="groupId" class="error-text helper-text" data-error="wrong" data-success="right"/>
                 </div>
                 <div class="input-field col s6">
                     <form:input path="birthDate" required="required" type="text" class="validate datepicker"/>
@@ -42,7 +43,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s6">
-                    <input type="submit" class="btn"/>
+                    <button type="submit" class="btn">Save<i class="material-icons right">send</i></button>
                 </div>
             </div>
         </form:form>
