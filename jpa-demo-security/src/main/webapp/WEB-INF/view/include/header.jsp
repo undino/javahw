@@ -36,6 +36,17 @@
                 </c:when>
                 <c:otherwise>
                     <li><a class="waves-effect waves-light modal-trigger" id="lgt" href="<spring:url value="/logout"/>">Log out</a></li>
+                    <form method="post" id="form_logout" action="/logout">
+                        <security:csrfInput/>
+                    </form>
+                    <script>
+                        let logout = document.getElementById("lgt");
+                        logout.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            const logForm = document.getElementById("form_logout");
+                            logForm.submit();
+                        })
+                    </script>
                 </c:otherwise>
             </c:choose>
         </ul>
