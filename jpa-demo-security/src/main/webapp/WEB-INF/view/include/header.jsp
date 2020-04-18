@@ -27,15 +27,15 @@
             <li><a href="<spring:url value="/h2console"/>" target="_blank">H2 Console</a></li>
 
 
-
-            <security:authorize access="hasAnyRole('ROLE_ADMIN')" var="isUser" />
+            <security:authorize access="isAuthenticated()" var="isUser"/>
 
             <c:choose>
                 <c:when test="${not isUser}">
                     <li><a class="waves-effect waves-light modal-trigger" href="/login">Sing in</a></li>
                 </c:when>
                 <c:otherwise>
-                    <li><a class="waves-effect waves-light modal-trigger" id="lgt" href="<spring:url value="/logout"/>">Log out</a></li>
+                    <li><a class="waves-effect waves-light modal-trigger" id="lgt" href="<spring:url value="/logout"/>">Log
+                        out</a></li>
                     <form method="post" id="form_logout" action="/logout">
                         <security:csrfInput/>
                     </form>
@@ -57,22 +57,33 @@
                 class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <ul id="dropdown-students" class="dropdown-content">
+        <security:authorize access="hasAnyRole('ROLE_ADMIN', 'ROLE_TEACHER')" var="creator"/>
+
         <li><a href="<spring:url value="/students"/>"><i class="material-icons">person</i>List</a></li>
-        <li><a href="<spring:url value="/students/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        <c:if test="${creator}">
+            <li><a href="<spring:url value="/students/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        </c:if>
     </ul>
     <ul id="dropdown-students-mobile" class="dropdown-content">
         <li><a href="<spring:url value="/students"/>"><i class="material-icons">person</i>List</a></li>
-        <li><a href="<spring:url value="/students/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        <c:if test="${creator}">
+            <li><a href="<spring:url value="/students/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        </c:if>
     </ul>
 
     <ul id="dropdown-groups" class="dropdown-content">
         <li><a href="<spring:url value="/groups"/>"><i class="material-icons">group</i>List</a></li>
-        <li><a href="<spring:url value="/groups/create"/>"><i class="material-icons">group_add</i>Add</a></li>
+        <c:if test="${creator}">
+            <li><a href="<spring:url value="/groups/create"/>"><i class="material-icons">group_add</i>Add</a></li>
+        </c:if>
     </ul>
 
     <ul id="dropdown-teachers" class="dropdown-content">
         <li><a href="<spring:url value="/teachers"/>"><i class="material-icons">group</i>List</a></li>
-        <li><a href="<spring:url value="/teachers/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        <security:authorize access="hasRole('ROLE_ADMIN')" var="isAdmin"/>
+        <c:if test="${isAdmin}">
+            <li><a href="<spring:url value="/teachers/create"/>"><i class="material-icons">person_add</i>Add</a></li>
+        </c:if>
     </ul>
 
 </nav>

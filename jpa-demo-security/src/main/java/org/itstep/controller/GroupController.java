@@ -1,12 +1,14 @@
 package org.itstep.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.itstep.domain.Teacher;
 import org.itstep.service.GroupService;
 import org.itstep.service.dto.GroupDto;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -54,6 +56,8 @@ public class GroupController {
     public String create(@Validated @ModelAttribute GroupDto groupDto,
                          BindingResult bindingResult) {
         log.debug("Create group: " + groupDto.toString());
+        Teacher teacher = (Teacher) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        log.warn("teacher is {}", teacher);
         if (!bindingResult.hasErrors()) {
             groupService.save(groupDto);
             log.debug("Group saved");
@@ -73,7 +77,7 @@ public class GroupController {
     public String edit(@PathVariable int id, Model model) {
         String url;
         Optional<GroupDto> found = groupService.findOne(id);
-        if(found.isPresent()) {
+        if (found.isPresent()) {
             model.addAttribute("groupDto", found.get());
             url = FORM_PATH;
         } else {

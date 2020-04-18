@@ -71,23 +71,46 @@ public class InitDatabase {
 //        groupRepository.saveAll(groupList);
 
         // Init students
-        studentService.save(new StudentDto("Вася", "Пупкин",
-                LocalDate.of(2001, 1, 1), 1));
-
-        studentService.save(new StudentDto("Маша", "Ефросинина",
-                LocalDate.of(1986, 2, 12), 1));
+        StudentDto studentDto = new StudentDto();
+        studentDto.setFirstName("Вася");
+        studentDto.setLastName("Пупкин");
+        studentDto.setPassword("{noop}student1");
+        studentDto.setRole("ROLE_STUDENT");
+        studentDto.setBirthDate( LocalDate.of(2001, 1, 1));
+        studentDto.setGroupId(1);
+        studentService.save(studentDto);
+//        studentService.save(new StudentDto("Вася", "Пупкин", "student1", "ROLE_STUDENT",
+//                LocalDate.of(2001, 1, 1), 1));
+        studentDto = new StudentDto();
+        studentDto.setFirstName("Маша");
+        studentDto.setLastName("Ефросинина");
+        studentDto.setPassword("{noop}student1");
+        studentDto.setRole("ROLE_STUDENT");
+        studentDto.setBirthDate(LocalDate.of(1986, 2, 12));
+        studentDto.setGroupId(1);
+        studentService.save(studentDto);
+//        studentService.save(new StudentDto("Маша", "Ефросинина",
+//                LocalDate.of(1986, 2, 12), 1));
 
         // Init teachers
-        TeacherDto teacherDto = new TeacherDto(null, "Василий", "Петрович", List.of(1, 2));
-//        Teacher teacher = teacherMapper.toEntity(teacherDto);
+        TeacherDto teacherDto = new TeacherDto();
+        teacherDto.setFirstName("Василий");
+        teacherDto.setLastName("Петрович");
+        teacherDto.setPassword("{noop}teacher1");
+        teacherDto.setRole("ROLE_TEACHER");
+        teacherDto.setGroupsId(List.of(1, 2));
+
+        Teacher teacher = teacherMapper.toEntity(teacherDto);
 //        groupList = groupRepository.findAllWithEagerRelationshipsById(teacherDto.getGroupsId());
 //        teacher.addGroups(groupList.get(0));
 //        teacher.addGroups(groupList.get(1));
-//
 //        teacherRepository.save(teacher);
 //        groupRepository.saveAll(groupList.stream().limit(2).collect(Collectors.toList()));
         teacherService.save(teacherDto);
 
+        System.out.println(teacherRepository.findAll());
+
         inited = true;
+
     }
 }
