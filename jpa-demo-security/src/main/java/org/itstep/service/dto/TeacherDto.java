@@ -25,7 +25,7 @@ public class TeacherDto {
     private String lastName;
 
     @NotBlank
-    @Length(max = 50)
+    @Length(max = 300)
     @Column(name = "password")
     private String password;
 

@@ -37,7 +37,7 @@
           p:jpaVendorAdapter-ref="jpaVendorAdapter">
         <property name="jpaProperties">
             <props>
-                <prop key="hibernate.format_sql">true</prop>
+<!--                <prop key="hibernate.format_sql">true</prop>-->
                 <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
             </props>
         </property>

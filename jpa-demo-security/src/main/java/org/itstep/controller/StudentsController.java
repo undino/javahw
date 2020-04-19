@@ -9,12 +9,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.NotBlank;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 @Slf4j
@@ -27,6 +37,7 @@ public class StudentsController {
     public static final String VIEW_PATH = "student";
     public static final String FORM_PATH = VIEW_PATH + "/form";
     public static final String INDEX_PATH = VIEW_PATH + "/index";
+    public static final String REGISTRATION = "/registration";
 
     final StudentService studentService;
     final GroupService groupService;
@@ -97,4 +108,27 @@ public class StudentsController {
         studentService.save(studentDto);
         return REDIRECT_INDEX;
     }
+
+    @GetMapping(value = "/registration")
+    public String registration(Model model){
+        model.addAttribute("student", new StudentDto());
+        model.addAttribute("groups", groupService.findAll(Pageable.unpaged()).getContent());
+        return REGISTRATION;
+    }
+
+    @PostMapping(value = "/registration")
+    public String registration(@Validated @ModelAttribute StudentDto studentDto, BindingResult bindingResult, Model model){
+        log.warn("in post method registration {} ", studentDto);
+        studentDto.setRole("ROLE_STUDENT");
+        studentService.save(studentDto);
+        SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
+        Authentication authentication =
+                new UsernamePasswordAuthenticationToken(studentDto, studentDto.getPassword(), AuthorityUtils.createAuthorityList(studentDto.getRole()));
+        securityContext.setAuthentication(authentication);
+        SecurityContextHolder.setContext(securityContext);
+
+        return "redirect:/";
+    }
+
+
 }

@@ -74,7 +74,7 @@ public class InitDatabase {
         StudentDto studentDto = new StudentDto();
         studentDto.setFirstName("Вася");
         studentDto.setLastName("Пупкин");
-        studentDto.setPassword("{noop}student1");
+        studentDto.setPassword("$2a$10$rWnRx6C3OR5s0z.5HoYyOufTbTjyKCmbqgTcUlPLUrbZMN6Ox4YNy");
         studentDto.setRole("ROLE_STUDENT");
         studentDto.setBirthDate( LocalDate.of(2001, 1, 1));
         studentDto.setGroupId(1);
@@ -84,7 +84,7 @@ public class InitDatabase {
         studentDto = new StudentDto();
         studentDto.setFirstName("Маша");
         studentDto.setLastName("Ефросинина");
-        studentDto.setPassword("{noop}student1");
+        studentDto.setPassword("$2a$10$rWnRx6C3OR5s0z.5HoYyOufTbTjyKCmbqgTcUlPLUrbZMN6Ox4YNy");
         studentDto.setRole("ROLE_STUDENT");
         studentDto.setBirthDate(LocalDate.of(1986, 2, 12));
         studentDto.setGroupId(1);
@@ -96,7 +96,7 @@ public class InitDatabase {
         TeacherDto teacherDto = new TeacherDto();
         teacherDto.setFirstName("Василий");
         teacherDto.setLastName("Петрович");
-        teacherDto.setPassword("{noop}teacher1");
+        teacherDto.setPassword("$2a$10$Q9W6qbdalYGfau8JymkdJ./GMo792VS6AcBLqpzjvzbm3awxVogFG");
         teacherDto.setRole("ROLE_TEACHER");
         teacherDto.setGroupsId(List.of(1, 2));
 
@@ -107,8 +107,6 @@ public class InitDatabase {
 //        teacherRepository.save(teacher);
 //        groupRepository.saveAll(groupList.stream().limit(2).collect(Collectors.toList()));
         teacherService.save(teacherDto);
-
-        System.out.println(teacherRepository.findAll());
 
         inited = true;
 
